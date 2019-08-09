@@ -1,0 +1,64 @@
+$tablet-width: 940px;
+$desktop-width: 1430px;
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/pt_sans-r.woff2") format("woff2"),
+  url("../fonts/pt_sans-r.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/pt_sans-b.woff2") format("woff2"),
+  url("../fonts/pt_sans-b.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/pt_sans-b-i.woff2") format("woff2"),
+  url("../fonts/pt_sans-b-i.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/pt_sans-i.woff2") format("woff2"),
+  url("../fonts/pt_sans-i.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+$PTSans: "PTSans", "Arial", sans-serif;
+
+$textColor: #707070;
+$titleColor: #404040;
+$red: #ea4a4a;
+$yellow: #f2b22f;
+$blue: #6c7db5;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin media($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}

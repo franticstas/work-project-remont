@@ -1,0 +1,21 @@
+/*
+ * Глобальные стили для трех блоков
+ */
+.global-main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 20px;
+
+  @include media(580px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}

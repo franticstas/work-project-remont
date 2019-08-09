@@ -1,0 +1,14 @@
+/*
+ * Стили модальных окон
+ */
+.modal__lk {
+  display: none;
+  width: 280px;
+}
+
+.modal {
+  min-width: 280px;
+  padding: 13px 20px 5px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}

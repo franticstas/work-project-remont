@@ -1,0 +1,84 @@
+/*
+ * Центральный раздел
+ */
+.main-block {
+  order: 3;
+  width: 100%;
+
+  @include tablet {
+    order: 2;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100% - 500px);
+    max-width: calc(100% - 500px);
+  }
+}
+
+.main__advantages-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.main__advantages-item {
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  max-width: 200px;
+  position: relative;
+  min-height: 70px;
+  padding-left: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.main__advantages-item--pay {
+  &::after {
+    background-image: url("../img/icon-pay.png");
+  }
+}
+
+.main__advantages-item--delivery {
+  &::after {
+    background-image: url("../img/icon-delivery.png");
+  }
+}
+
+.main__advantages-item--guarantee {
+  &::after {
+    background-image: url("../img/icon-guarantee.png");
+  }
+}
+
+.main__advantages-item--consultation {
+  &::after {
+    background-image: url("../img/icon-consultation.png");
+  }
+}
+
+.main__info img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

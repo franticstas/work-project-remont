@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $desktop-width;
+}
+
+body {
+  font-family: $PTSans;
+  background-color: #ffffff;
+  color: #707070;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//:active,
+//:hover,
+//:focus {
+//  outline: 0;
+//  outline-offset: 0;
+//}
+
+/*
+ * Слой маска
+ */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.show {
+  display: block;
+}
+
+h1, h2 {
+  color: #404040;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
