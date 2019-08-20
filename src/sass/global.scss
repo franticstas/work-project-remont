@@ -95,9 +95,15 @@ p {
 
 .products-wrapper {
   padding: 15px 20px;
+  position: relative;
 
   @include media(768px) {
     padding: 20px;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
   }
 
   @include desktop {

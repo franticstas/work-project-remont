@@ -2,7 +2,7 @@
  * Стили для основного раздела категорий и товаров
  */
 .products-main-block {
-
+  width: 100%;
 }
 
 .products__form-select {/*Форма выбора сортировки*/
@@ -23,7 +23,11 @@
 //  height: auto;
 //}
 .select2-container--products {
-  width: auto !important;
+  width: 100% !important;
+
+  @include media(500px) {
+    width: auto !important;
+  }
 }
 
 .select2-container--products .select2-selection--single {
@@ -136,6 +140,11 @@
  */
 .sort-view-block {
   margin-bottom: 25px;
+  margin-top: 80px;
+
+  @include media(500px) {
+    margin-top: 0;
+  }
 
   @include media(768px) {
     display: flex;
@@ -148,6 +157,10 @@
 
   @include media(768px) {
     display: block;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

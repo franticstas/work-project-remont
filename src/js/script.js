@@ -202,6 +202,11 @@ $('.middle-header__options-form-close').click(function() {
   $('.middle-header__options-form-block').removeClass('middle-header__options-form-block--show');
 });
 
+//Показ подбора по параметрам
+$('.products-filter__title').click(function() {
+  $('.products-filter__options-form').toggleClass('products-filter__options-form--show');
+});
+
 //Ползунок в параметрах
 var $optSl = $(".js-range-slider");
 var $minPrice = $(".options__min-price");
