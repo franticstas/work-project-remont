@@ -5,7 +5,7 @@
 
 }
 
-.breadcrumbs .wrapper {
+.breadcrumbs {
   padding: 0;
 }
 
@@ -31,24 +31,24 @@
   margin-left: 5px;
 
   &::before {
-    font-family: $OpenSans400;
-    content: "\\ ";
+    font-family: $PTSans;
+    content: "/ ";
     color: #828282;
     font-size: 13px;
   }
 }
 
 .breadcrumbs a {
-  color: #273319;
-  font-family: $OpenSans400;
+  color: #404040;
+  font-family: $PTSans;
   font-size: 11px;
   line-height: 18px;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
 .breadcrumbs__current a {
-  color: #828282;
+  color: #909090;
 }

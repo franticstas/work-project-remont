@@ -231,6 +231,16 @@ $(document).ready(function() {
   });
 });
 
+//Select сортировка
+$('.products__select').select2({
+   minimumResultsForSearch: -1,
+  theme: "products",
+  placeholder: {
+    id: '-1', // the value of the option
+    text: 'Сортировать:'
+  }
+});
+
 //Слайдер в хедере
 var swiperHeader = new Swiper('.swiper-header', {
   pagination: {
@@ -316,4 +326,25 @@ var swiperNews = new Swiper('.swiper__news', {
 
 $(document).ready(function(){
   $("#sticker").sticky({topSpacing:0});
+});
+
+$('.products-view__toggle').click(function() {
+  $('.products-view__toggle').removeClass('products-view__toggle--active');
+  $(this).toggleClass('products-view__toggle--active');
+});
+
+//Плюс минус количество товаров
+$('.minus').click(function () {
+  var $input = $(this).parent().find('input');
+  var count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+$('.plus').click(function () {
+  var $input = $(this).parent().find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
 });

@@ -1,0 +1,201 @@
+/*
+ * Стили для основного раздела категорий и товаров
+ */
+.products-main-block {
+
+}
+
+.products__form-select {/*Форма выбора сортировки*/
+
+}
+
+//.select2-container--products {/*Тема селекта*/
+//  //width: 200px;
+//  background-color: #fff;
+//  border: 1px solid #ea4a4a;
+//  border-radius: 18px;
+//  color: #606060;
+//  font-size: 14px;
+//  padding: 10px 20px 11px;
+//}
+//
+//.select2-container--products .select2-selection--single {
+//  height: auto;
+//}
+.select2-container--products {
+  width: auto !important;
+}
+
+.select2-container--products .select2-selection--single {
+  background-color: #fff;
+  //border: 1px solid #aaa;
+  border: 1px solid #ea4a4a;
+  border-radius: 18px;
+  height: auto;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+    padding-right: 90px;
+  }
+
+  .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+  }
+
+  .select2-selection__placeholder {
+    color: #999;
+  }
+
+  .select2-selection__arrow {
+    height: 26px;
+
+    position: absolute;
+
+    top: 1px;
+    right: 1px;
+
+    width: 20px;
+
+    b {
+      border-color: #888 transparent transparent transparent;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+
+      height: 0;
+      left: 50%;
+
+      margin-left: -4px;
+      margin-top: -2px;
+
+      position: absolute;
+
+      top: 50%;
+      width: 0;
+    }
+  }
+
+
+  &[dir="rtl"] {
+    .select2-selection--single {
+      .select2-selection__clear {
+        float: left;
+      }
+
+      .select2-selection__arrow {
+        left: 1px;
+        right: auto;
+      }
+    }
+  }
+
+  &.select2-container--disabled {
+    .select2-selection--single {
+      background-color: #eee;
+      cursor: default;
+
+      .select2-selection__clear {
+        display: none;
+      }
+    }
+  }
+
+  &.select2-container--open {
+    .select2-selection--single {
+      .select2-selection__arrow {
+        b {
+          border-color: transparent transparent #888 transparent;
+          border-width: 0 4px 5px 4px;
+          //border: none;
+        }
+      }
+    }
+  }
+}
+
+.select2-container--products.select2-container--open .select2-selection--single {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  border-bottom: 1px solid transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+/*
+ * Стили для кнопок отображения товаров
+ */
+.sort-view-block {
+  margin-bottom: 25px;
+
+  @include media(768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.products-view {
+  display: none;
+
+  @include media(768px) {
+    display: block;
+  }
+}
+
+.products-view__toggle {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:active,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:hover {
+    border: 1px solid #a0a0a0;
+  }
+}
+
+.products-view__toggle--active {
+  background-color: #ea4a4a;
+  border: 1px solid #ea4a4a;
+
+  &:hover {
+    border: 1px solid #ea4a4a;
+  }
+}
+
+.products-view__shop {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='20px' height='20px' viewBox='0 0 20 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill-rule='evenodd' fill='%23a0a0a0' d='M8,0 L12,0 L12,4 L8,4 L8,0 Z M8,8 L12,8 L12,12 L8,12 L8,8 Z M16,8 L20,8 L20,12 L16,12 L16,8 Z M20,0 L20,4 L16,4 L16,0 L20,0 Z M20,20 L16,20 L16,16 L20,16 L20,20 Z M12,20 L8,20 L8,16 L12,16 L12,20 Z M0,0 L4,0 L4,4 L0,4 L0,0 Z M0,8 L4,8 L4,12 L0,12 L0,8 Z M0,20 L0,16 L4,16 L4,20 L0,20 Z'/%3E%3C/svg%3E");
+}
+
+.products-view__shop.products-view__toggle--active {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='20px' height='20px' viewBox='0 0 20 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill-rule='evenodd' fill='%23ffffff' d='M8,0 L12,0 L12,4 L8,4 L8,0 Z M8,8 L12,8 L12,12 L8,12 L8,8 Z M16,8 L20,8 L20,12 L16,12 L16,8 Z M20,0 L20,4 L16,4 L16,0 L20,0 Z M20,20 L16,20 L16,16 L20,16 L20,20 Z M12,20 L8,20 L8,16 L12,16 L12,20 Z M0,0 L4,0 L4,4 L0,4 L0,0 Z M0,8 L4,8 L4,12 L0,12 L0,8 Z M0,20 L0,16 L4,16 L4,20 L0,20 Z'/%3E%3C/svg%3E");
+}
+
+.products-view__list {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='21px' height='20px' viewBox='0 0 21 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill-rule='evenodd' fill='%23a0a0a0' d='M7,0 L21,0 L21,4 L7,4 L7,0 Z M7,12 L7,8 L21,8 L21,12 L7,12 Z M7,20 L7,16 L21,16 L21,20 L7,20 Z M0,0 L4,0 L4,4 L0,4 L0,0 Z M0,8 L4,8 L4,12 L0,12 L0,8 Z M0,20 L0,16 L4,16 L4,20 L0,20 Z'/%3E%3C/svg%3E");
+}
+
+.products-view__list.products-view__toggle--active {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='21px' height='20px' viewBox='0 0 21 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill-rule='evenodd' fill='%23ffffff' d='M7,0 L21,0 L21,4 L7,4 L7,0 Z M7,12 L7,8 L21,8 L21,12 L7,12 Z M7,20 L7,16 L21,16 L21,20 L7,20 Z M0,0 L4,0 L4,4 L0,4 L0,0 Z M0,8 L4,8 L4,12 L0,12 L0,8 Z M0,20 L0,16 L4,16 L4,20 L0,20 Z'/%3E%3C/svg%3E");
+}
