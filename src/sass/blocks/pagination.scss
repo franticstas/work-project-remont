@@ -1,0 +1,78 @@
+/*
+ * Стили для пагинации
+ */
+.pagination__list {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  width: 34px;
+  height: 34px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 2px;
+}
+
+.page__num a {
+  font-size: 14px;
+  display: block;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid $red;
+  }
+}
+
+.page__num--active a {
+  color: #fff;
+  border-color: $red;
+  background-color: $red;
+}
+
+.page-arrow a {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid $red;
+  }
+}
+
+.page-first a {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='14px' height='14px' viewBox='0 0 14 14' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E%3Cpath fill='%23404040' d='M13.000,7.374 C13.000,7.374 6.374,14.000 6.374,14.000 C6.374,14.000 4.999,12.625 4.999,12.625 C4.999,12.625 10.624,7.000 10.624,7.000 C10.624,7.000 4.999,1.374 4.999,1.374 C4.999,1.374 6.374,-0.001 6.374,-0.001 C6.374,-0.001 13.000,6.625 13.000,6.625 C13.000,6.625 12.626,6.999 12.626,6.999 C12.626,6.999 13.000,7.374 13.000,7.374 ZM7.626,6.999 C7.626,6.999 8.000,7.374 8.000,7.374 C8.000,7.374 1.374,14.000 1.374,14.000 C1.374,14.000 -0.001,12.625 -0.001,12.625 C-0.001,12.625 5.624,7.000 5.624,7.000 C5.624,7.000 -0.001,1.374 -0.001,1.374 C-0.001,1.374 1.374,-0.001 1.374,-0.001 C1.374,-0.001 8.000,6.625 8.000,6.625 C8.000,6.625 7.626,6.999 7.626,6.999 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  transform: rotate(180deg);
+}
+
+.page__prev a {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='14px' height='8px' viewBox='0 0 14 8' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E%3Cpath fill='%23404040' d='M 14 6.63 C 14 6.63 12.63 8 12.63 8 C 12.63 8 7 2.38 7 2.38 C 7 2.38 1.37 8 1.37 8 C 1.37 8 0 6.63 0 6.63 C 0 6.63 6.63 0 6.63 0 C 6.63 0 7 0.37 7 0.37 C 7 0.37 7.37 0 7.37 0 C 7.37 0 14 6.63 14 6.63 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  transform: rotate(-90deg);
+}
+
+.page__next a {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='14px' height='8px' viewBox='0 0 14 8' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E%3Cpath fill='%23404040' d='M 14 6.63 C 14 6.63 12.63 8 12.63 8 C 12.63 8 7 2.38 7 2.38 C 7 2.38 1.37 8 1.37 8 C 1.37 8 0 6.63 0 6.63 C 0 6.63 6.63 0 6.63 0 C 6.63 0 7 0.37 7 0.37 C 7 0.37 7.37 0 7.37 0 C 7.37 0 14 6.63 14 6.63 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  transform: rotate(90deg);
+}
+
+.page__last a {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='14px' height='14px' viewBox='0 0 14 14' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E%3Cpath fill='%23404040' d='M13.000,7.374 C13.000,7.374 6.374,14.000 6.374,14.000 C6.374,14.000 4.999,12.625 4.999,12.625 C4.999,12.625 10.624,7.000 10.624,7.000 C10.624,7.000 4.999,1.374 4.999,1.374 C4.999,1.374 6.374,-0.001 6.374,-0.001 C6.374,-0.001 13.000,6.625 13.000,6.625 C13.000,6.625 12.626,6.999 12.626,6.999 C12.626,6.999 13.000,7.374 13.000,7.374 ZM7.626,6.999 C7.626,6.999 8.000,7.374 8.000,7.374 C8.000,7.374 1.374,14.000 1.374,14.000 C1.374,14.000 -0.001,12.625 -0.001,12.625 C-0.001,12.625 5.624,7.000 5.624,7.000 C5.624,7.000 -0.001,1.374 -0.001,1.374 C-0.001,1.374 1.374,-0.001 1.374,-0.001 C1.374,-0.001 8.000,6.625 8.000,6.625 C8.000,6.625 7.626,6.999 7.626,6.999 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+}

@@ -2,7 +2,9 @@
  * Стили для списка товаров в категориях
  */
 .products-main__list {/*Список товаров*/
-
+  @include tablet {
+    margin-right: 15px;
+  }
 }
 
 .products-main__item {
@@ -77,6 +79,7 @@
     padding: 0 20px;
     border-left: 1px solid #ededed;
     margin-left: auto;
+    flex: 0 0 200px;
   }
 }
 
@@ -85,12 +88,30 @@
   align-items: center;
   padding: 9px 0;
   border-bottom: 1px solid #efefef;
+  position: relative;
 
   @include media(768px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.products-main__discount {
+  position: absolute;
+  font-size: 13px;
+  border: 1px solid $blue;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  top: -50px;
+  left: 0;
+  color: $titleColor;
+  display: none;
+}
+
+.products-main__item-old-price:hover ~ .products-main__discount,
+.products-main__item-old-price:active ~ .products-main__discount {
+  display: block;
 }
 
 .products-main__item-price {
@@ -133,6 +154,8 @@
     border-radius: 50%;
     border: 1px solid #909090;
   }
+
+
 }
 
 .products-main__item-amount {/*Выбрать количество*/
@@ -191,21 +214,19 @@
   margin: -1px -1px -1px -1px;
 
   &:active,
+  &:focus,
   &:hover {
     outline: 0;
     outline-offset: 0;
   }
-}
 
-.plus{
   &:hover {
     border-color: #6c7db5;
   }
-}
 
-.minus {
-  &:hover {
-    border-color: #6c7db5;
+  &:active {
+    color: #FFFFFF;
+    background-color: #6c7db5;
   }
 }
 
@@ -249,6 +270,7 @@
   padding: 5px 15px;
   font-weight: 700;
   font-size: 14px;
+  cursor: pointer;
 
   @include media(768px) {
     width: 100%;
@@ -270,20 +292,27 @@
     flex-wrap: wrap;
   }
 
+  @include tablet {
+    margin-right: 0;
+  }
+
   @include desktop {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
-.products-main__list--view-shop .products-main__item {
+.products-main__list--view-shop .products-main__item {/*Блок товара*/
   @include media(768px) {
     height: auto;
     width: 32%;
     margin-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   @include desktop {
     max-width: 220px;
+    margin-right: 20px;
   }
 }
 
@@ -297,7 +326,7 @@
   }
 }
 
-.products-main__list--view-shop .products-main__item-top {
+.products-main__list--view-shop .products-main__item-top {/*Верхний блок товара*/
   @include media(768px) {
     display: flex;
     flex-direction: column;
@@ -307,7 +336,7 @@
   }
 }
 
-.products-main__list--view-shop .products-main__item-img-block {
+.products-main__list--view-shop .products-main__item-img-block {/*Блок фото товара*/
   @include media(768px) {
     border: 1px solid #ededed;
     width: 100%;
@@ -315,42 +344,60 @@
   }
 }
 
-.products-main__list--view-shop .products-main__item-img-block img {
-  max-width: 200px;
+.products-main__list--view-shop .products-main__item-img-block img {/*Фото товара*/
+  max-width: 198px;
 }
 
-.products-main__list--view-shop .products-main__item-info-block {
+.products-main__list--view-shop .products-main__item-info-block {/*Информация о товара*/
   @include media(768px) {
     padding: 0;
   }
 }
 
-.products-main__list--view-shop .products-main__item-bottom {
+.products-main__list--view-shop .products-main__item-bottom {/*Нижний блок товара*/
   @include media(768px) {
+    padding: 0;
+    margin: 0;
     border: none;
+    flex: 0 1 auto;
   }
 }
 
-.products-main__list--view-shop .products-main__item-bottom {
-  padding: 0;
-  margin: 0;
-}
-
-.products-main__list--view-shop .products-main__item-amount {
-  flex-direction: row;
-  align-items: center;
-}
-
-.products-main__list--view-shop .products-main__item-price-block {
-  flex-direction: row;
-  flex-wrap: wrap;
+.products-main__list--view-shop .products-main__item-price-block {/*Цена*/
+  @include media(768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .products-main__list--view-shop .products-main__item-price {
-  white-space: nowrap;
+  @include media(768px) {
+    white-space: nowrap;
+  }
 }
 
 .products-main__list--view-shop .products-main__item-old-price {
-  white-space: nowrap;
-  margin-left: auto;
+  @include media(768px) {
+    white-space: nowrap;
+    margin-left: auto;
+  }
+}
+
+.products-main__list--view-shop .products-main__item-amount {/*Количество товара*/
+  @include media(768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.products-main__list--view-shop .products-main__item-amount span {
+  @include media(768px) {
+    margin-bottom: 0;
+  }
+}
+
+.products-main__list--view-shop .products-main__item-add-cart button {
+  @include media(768px) {
+    width: auto;
+  }
 }

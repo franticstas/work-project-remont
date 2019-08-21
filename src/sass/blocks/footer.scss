@@ -156,6 +156,14 @@
   text-decoration: none;
   color: $titleColor;
   font-size: 14px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
 }
 
 .footer__nav-item:first-child a {

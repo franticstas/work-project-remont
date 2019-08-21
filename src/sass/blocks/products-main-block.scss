@@ -3,6 +3,10 @@
  */
 .products-main-block {
   width: 100%;
+
+  @include tablet {
+    position: relative;
+  }
 }
 
 .products__form-select {/*Форма выбора сортировки*/
@@ -35,7 +39,7 @@
   //border: 1px solid #aaa;
   border: 1px solid #ea4a4a;
   border-radius: 18px;
-  height: auto;
+  height: 40px;
 
   &:active,
   &:hover,
@@ -48,6 +52,7 @@
     color: #444;
     line-height: 28px;
     padding-right: 90px;
+    padding-top: 4px;
   }
 
   .select2-selection__clear {
@@ -65,7 +70,7 @@
 
     position: absolute;
 
-    top: 1px;
+    top: 6px;
     right: 1px;
 
     width: 20px;
@@ -162,6 +167,13 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include tablet {
+    top: 80px;
+    left: auto;
+    transform: none;
+    right: 20px;
+  }
 }
 
 .products-view__toggle {
@@ -191,6 +203,7 @@
 .products-view__toggle--active {
   background-color: #ea4a4a;
   border: 1px solid #ea4a4a;
+  cursor: auto;
 
   &:hover {
     border: 1px solid #ea4a4a;
