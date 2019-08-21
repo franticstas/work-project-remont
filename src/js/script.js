@@ -333,6 +333,29 @@ var swiperRightProduct = new Swiper('.swiper-slider__right', {
   },
 });
 
+
+//Галерея товара
+var galleryThumbs = new Swiper('.gallery-product-thumbs', {
+  spaceBetween: 35,
+  slidesPerView: 3,
+  freeMode: true,
+  direction: 'vertical',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+
+var galleryTop = new Swiper('.gallery-product-top', {
+  spaceBetween: 10,
+  effect: 'fade',
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+
 //Слайдер Акции
 var swiperStocks = new Swiper('.swiper__stocks', {
   pagination: {

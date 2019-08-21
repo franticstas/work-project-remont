@@ -29,12 +29,19 @@
   height: 120px;
   display: inline-block;
   flex: 0 0 120px;
+  position: relative;
 
   @include media(480px) {
     width: 200px;
     height: 200px;
     flex: 0 0 200px;
   }
+}
+
+.products-main__item-img-block .slider-product__label {
+  top: 5px;
+  left: 5px;
+  right: 5px;
 }
 
 .products-main__item-img-block img {
