@@ -391,3 +391,16 @@ $('.plus').click(function () {
   $input.change();
   return false;
 });
+
+$(function(){
+  $('.product-main-show-hide-btn').click(function(){
+    $('.product-main__top-options-item:nth-child(n+3)').slideToggle();
+    const text = $('.product-main-show-hide-btn').text();
+    if (text === 'ПОСМОТРЕТЬ ВСЕ ПАРАМЕТРЫ') {
+      $('.product-main-show-hide-btn').text('СВЕРНУТЬ');
+    }
+    if (text === 'СВЕРНУТЬ') {
+      $('.product-main-show-hide-btn').text('ПОСМОТРЕТЬ ВСЕ ПАРАМЕТРЫ');
+    }
+  });
+});
