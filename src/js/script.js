@@ -332,7 +332,36 @@ var swiperRightProduct = new Swiper('.swiper-slider__right', {
     }
   },
 });
+function resizeScrenn() {
+  //Слайдер Модификации
+  var swiperModification = new Swiper('.modification-slider', {
+    breakpointsInverse: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      570: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      940: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1430: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      },
+    },
+  });
+}
 
+$('.product-main__info-mod').click(function() {
+  resizeScrenn();
+});
 
 //Галерея товара
 var galleryThumbs = new Swiper('.gallery-product-thumbs', {
@@ -349,7 +378,7 @@ var galleryThumbs = new Swiper('.gallery-product-thumbs', {
 });
 
 var galleryTop = new Swiper('.gallery-product-top', {
-  spaceBetween: 10,
+  spaceBetween: 15,
   effect: 'fade',
   thumbs: {
     swiper: galleryThumbs
@@ -369,6 +398,31 @@ var swiperNews = new Swiper('.swiper__news', {
   pagination: {
     el: '.swiper-pagination__aside-right',
     clickable: true,
+  },
+});
+
+//Слайдер Похожие товары
+var swiperSimilar = new Swiper('.similar-products-slider', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpointsInverse: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    940: {
+      slidesPerView: 1,
+    },
   },
 });
 
@@ -404,3 +458,17 @@ $(function(){
     }
   });
 });
+
+//Аккордеон в карточке товара
+$(document).ready(function() {
+  //прикрепляем клик по заголовкам acc-head
+  $('.product-main__info-title').on('click', f_acc);
+});
+
+function f_acc(){
+//скрываем все кроме того, что должны открыть
+  $('.product-main__info-hidden-block').not($(this).next()).slideUp(1000);
+// открываем или скрываем блок под заголовоком, по которому кликнули
+  $(this).next().slideToggle(1000);
+}
+
