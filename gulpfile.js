@@ -20,7 +20,7 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "src/",
+    server: true,
     notify: false,
     open: true,
     cors: true,
@@ -28,7 +28,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("src/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("src/*.html").on("change", server.reload);
+  gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));

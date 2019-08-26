@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="keywords" content="Магазин техники" />
   <meta name="description" content="Магазин техники" />
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
-  <link rel="stylesheet" href="css/select2.min.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="src/css/select2.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>Магазин техники</title>
 </head>
 <body>
@@ -669,438 +669,580 @@
         <li class="breadcrumbs__item">
           <a href="#">Главная</a>
         </li>
+        <li class="breadcrumbs__item">
+          <a href="#">Фотоаппараты</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#">Беззеркальные камеры</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#">Беззеркальные камеры Sony</a>
+        </li>
         <li class="breadcrumbs__item breadcrumbs__current">
-          <a>Фотоаппараты</a>
+          <a>Alpha A6000 Body</a>
         </li>
       </ul>
     </div>
-    <h1>Фотоаппараты</h1>
-<!--    ************** Сортировка и отображение товаров ******************-->
-    <div class="sort-view-block">
-      <!--    ************** Сортировка **************-->
-      <form class="products__form-select">
-        <label>
-          <select class="products__select" name="" id="">
-            <option value="-1"></option>
-            <option value="">Сначало дешёвые</option>
-            <option value="">Сначало дорогие</option>
-            <option value="">По названию А-Я</option>
-            <option value="">По названию Я-А</option>
-          </select>
-        </label>
-      </form>
-      <div class="products-view">
-        <button class="products-view__shop products-view__toggle products-view__toggle--active">
-        </button>
-        <button class="products-view__list products-view__toggle">
-        </button>
-      </div>
-    </div>
-<!--    ************** Список товаров ****************-->
+    <h1>ALPHA A6000 BODY</h1>
     <main>
-      <div class="products-main__list products-main__list--view-shop">
-<!--        ********** Товар **********-->
-        <article class="products-main__item">
-          <form>
-            <div class="products-main__item-top">
-              <a class="products-main__item-img-block" href="#">
-                <img src="img/product1.png" width="200" height="200" alt="">
-                <!--                ************** Стикеры на товаре ***************-->
-                <div class="slider-product__label">
-                  <div class="product__label-item product__label-item--hit">
-                    Хит продаж
+<!--      *************** Товар ************-->
+      <div class="product-main">
+        <div class="product-main__top">
+<!--          ***************** Галерея товара ***************-->
+          <div class="product-main__gallery">
+            <div class="product-main__thumbs-block">
+<!--              *************** Слайдер навигации *************-->
+              <div class="swiper-container gallery-product-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="src/img/product1.png" width="50" height="50" alt="">
                   </div>
-                  <div class="product__label-item product__label-item--new">
-                    Новинка
+                  <div class="swiper-slide">
+                    <img src="src/img/product2.png" width="50" height="50" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="src/img/product3.png" width="50" height="50" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="src/img/product1.png" width="50" height="50" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="src/img/product1.png" width="50" height="50" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="src/img/product1.png" width="50" height="50" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="src/img/product1.png" width="50" height="50" alt="">
                   </div>
                 </div>
-              </a>
-              <div class="products-main__item-info-block">
-                <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS >Alpha A5100 Kit 16-50 f/3.5-5.6 O S white</a></h2>
-                <ul class="goods__price-rating">
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                </ul>
-                <div class="products-main__article">
-                  Артикул: <span>428514169</span>
+              </div>
+              <!-- Add Arrows -->
+              <div class="products-swiper-button-prev swiper-button-prev"></div>
+              <div class="products-swiper-button-next swiper-button-next"></div>
+            </div>
+<!--            ******************* Основной слайдер ****************-->
+            <div class="swiper-container gallery-product-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/img/product1.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product2.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product3.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product1.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product1.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product1.png" width="200" height="200" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/product1.png" width="200" height="200" alt="">
+                </div>
+              </div>
+              <!--                ************** Стикеры на товаре ***************-->
+              <div class="slider-product__label">
+                <div class="product__label-item product__label-item--hit">
+                  Хит продаж
+                </div>
+                <div class="product__label-item product__label-item--new">
+                  Новинка
                 </div>
               </div>
             </div>
-            <div class="products-main__item-bottom">
+          </div>
+<!--          ****************** Верхний раздел параметров товара ***************-->
+          <div>
+            <div class="product-main__top-options-block">
+              <!--            *********** Артикул и рейтинг **************-->
+              <div class="product-main__top-options-title">
+                <div class="product-main__top-code">
+                  Артикул: <span>4545456</span>
+                </div>
+                <div class="product-main__top-rating">
+                  <ul class="goods__price-rating">
+                    <li class="goods__price-stars goods__price-stars--full"></li>
+                    <li class="goods__price-stars goods__price-stars--full"></li>
+                    <li class="goods__price-stars"></li>
+                    <li class="goods__price-stars"></li>
+                    <li class="goods__price-stars"></li>
+                  </ul>
+                  <span>(8 голосов)</span>
+                </div>
+              </div>
+              <div class="product-main__top-options">
+                <div class="product-main__options-wrap">
+                  <div class="product-main__top-description">
+                    Достойный полупрофессиональный фотоаппарат
+                    Canon EOS 5D Mark III Body, имеет понятный
+                    интерфейс и подойдет для мастеров своего дела.
+                    Размер дисплея 3.20 дюйма с разрешением 348000 точек.
+                  </div>
+                  <ul class="product-main__top-options-list">
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+                        <a href="#">Производитель 1</a>
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Цвет корпуса
+                      </div>
+                      <div class="product-main__top-options-item-right">
+                        <div class="product-main__top-color">
+                          <label class="color-label">
+                            <input class="product-input product-black-input" type="radio" name="color" id="product-black" checked>
+                            <span class="product__radio product__radio-black" style="background-image: url('src/img/product1.png')"></span>
+                            <div class="product-main__big-color">
+                              <img src="src/img/product1.png" alt="">
+                              Черный
+                            </div>
+                          </label>
+                          <label class="color-label">
+                            <input class="product-input product-red-input" type="radio" name="color" id="product-red">
+                            <span class="product__radio product__radio-red" style="background-image: url('src/img/product-red.png')"></span>
+                            <div class="product-main__big-color">
+                              <img src="src/img/product-red.png" alt="">
+                              Красный
+                            </div>
+                          </label>
+                          <label class="color-label">
+                            <input class="product-input product-blue-input" type="radio" name="color" id="product-blue">
+                            <span class="product__radio product__radio-blue" style="background-image: url('src/img/product-blue.png')"></span>
+                            <div class="product-main__big-color">
+                              <img src="src/img/product-blue.png" alt="">
+                              Синий
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Видоискатель
+                      </div>
+                      <div class="product-main__top-options-item-right">
+                        зеркальный (TTL), зеркальный (TTL)
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Тип матрицы
+                      </div>
+                      <div class="product-main__top-options-item-right">
+                        CMOS, CMOS
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Кроп-фактор
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                    <li class="product-main__top-options-item">
+                      <div class="product-main__top-options-item-left">
+                        Производитель:
+                      </div>
+                      <div class="product-main__top-options-item-right">
+
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="product-main-show-hide-btn">ПОСМОТРЕТЬ ВСЕ ПАРАМЕТРЫ</div>
+                  <div class="product-main__price-cart">
+                    <div class="product-main__price-block">
+                      <div class="product-main__price"><span>3343433387.40</span> руб.</div>
+                      <div class="product-main__old-price"><span>33387.40</span> руб. </div>
+                      <div class="product-main__discount">Описание Товарная скидка</div>
+                    </div>
+                    <div class="product-main__item-amount">
+                      <div class="number-size">
+                        <button class="minus" type="button">-</button>
+                        <label>
+                          <input type="number" value="1" maxlength="4">
+                        </label>
+                        <button class="plus" type="button">+</button>
+                      </div>
+                    </div>
+                    <div class="product-main__add-cart">
+                      <button class="product-main__add-cart-btn" type="submit">В корзину</button>
+                      <a class="product-main__one-click-btn" data-fancybox data-src="#modal__one-click" href="javascript:;">Купить в 1 клик</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-main__present">
+                  <div class="product-main__present-wrap">
+                  <span class="product-main__present--icon">
+                  </span>
+                    Подарок
+                    <div class="product-main__present-hidden-block">
+                      <div class="product-main__present-title">
+                        Подарок
+                      </div>
+                      Описание подарок Описание подарок Описание подарок Описание подарок
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter"></div>
+          </div>
+        </div>
+<!--        *************** Нижний блок товара *******************-->
+        <div class="product-main__bottom">
+          <div class="tab-control">
+            <div class="item" data-tab="1">
+              Параметры
+            </div>
+            <div class="item" data-tab="2">
+              Описание
+            </div>
+            <div class="item product-main__tab-mod" data-tab="3">
+              Модификации
+            </div>
+            <div class="item" data-tab="4">
+              Доставка
+            </div>
+            <div class="item" data-tab="5">
+              Отзывы
+            </div>
+          </div>
+<!--          *********** Параметры **********-->
+          <div class="product-main__info tab-container product-main__info--active" data-tab="1">
+            <div class="product-main__info-title">Параметры</div>
+            <div class="product-main__info-hidden-block">
+              <ul class="product-main__bottom-options-list">
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Производитель:
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Цвет корпуса
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    <span class="product-main__bottom-color" style="background-image: url('src/img/product1.png')"></span>
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+<!--          ************** Описание ***************-->
+          <div class="product-main__info tab-container" data-tab="2">
+            <div class="product-main__info-title">Описание</div>
+            <div class="product-main__info-hidden-block">
+              <p>
+                В этом блоке мы рекомендуем разместить полный каталог
+                с описанием Ваших товаров/услуг, рассказать о
+                характеристиках предлагаемых товаров, создать любую
+                удобную, соответствующую задачам вашего бизнеса, структуру каталога.
+              </p>
+              <p>
+                Примечание. Обращаем Ваше внимание, что текстовая информация
+                на сайте должна быть индивидуальной, не скопированной с других
+                интернет-ресурсов, о чем указано в рекомендациях Яндекса:
+                «Мы стараемся не индексировать или не ранжировать высоко сайты,
+                копирующие информацию с других ресурсов и не создающие
+                оригинального контента или сервиса».
+              </p>
+              <p>
+                Пример заполнения страницы:
+              </p>
+              <p>
+                Основным направлением деятельности компании является изготовление и реализация …
+                (Укажите направление деятельности Вашей компании).
+              </p>
+            </div>
+          </div>
+<!--          ************ Модификации *************-->
+          <div class="product-main__info tab-container product-main__info-mod" data-tab="3">
+            <div class="product-main__info-title">Модификации</div>
+            <div class="product-main__info-hidden-block">
+              <div class="product-main__modification-wrapper">
+                <div class="swiper-container modification-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <!--                ************ Модификация 1 **************-->
+                      <div class="product-main__modification-block">
+                        <a class="product-main__img-block" href="#">
+                          <img src="src/img/product1.png" width="200" height="200" alt="">
+                        </a>
+                        <div class="product-main__info-block">
+                          <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS >Alpha A5100 Kit 16-50 f/3.5-5.6 O S white</a></h2>
+                          <div class="product-main__parameter">
+                            <div class="product-main__parameter-left">
+                              Цвет корпуса
+                            </div>
+                            <div class="product-main__parameter-right">
+                              <span class="product-main__bottom-color" style="background-image: url('src/img/product1.png')"></span>
+                            </div>
+                          </div>
+                          <div class="products-main__item-price-block">
+                            <div class="products-main__item-price"><span>33.40</span> руб.</div>
+                            <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
+                            <div class="products-main__discount">Описание Товарная скидка</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <!--                ************ Модификация 2 **************-->
+                      <div class="product-main__modification-block">
+                        <a class="product-main__img-block" href="#">
+                          <img src="src/img/product1.png" width="200" height="200" alt="">
+                        </a>
+                        <div class="product-main__info-block">
+                          <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS >Alpha A5100 Kit 16-50 f/3.5-5.6 O S white</a></h2>
+                          <div class="product-main__parameter">
+                            <div class="product-main__parameter-left">
+                              Цвет корпуса
+                            </div>
+                            <div class="product-main__parameter-right">
+                              <span class="product-main__bottom-color" style="background-image: url('src/img/product1.png')"></span>
+                            </div>
+                          </div>
+                          <div class="products-main__item-price-block">
+                            <div class="products-main__item-price"><span>33.40</span> руб.</div>
+                            <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
+                            <div class="products-main__discount">Описание Товарная скидка</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--          ************** Доставка ***************-->
+          <div class="product-main__info tab-container" data-tab="4">
+            <div class="product-main__info-title">Доставка</div>
+            <div class="product-main__info-hidden-block">
+              <p>
+                В этом блоке мы рекомендуем разместить полный каталог
+                с описанием Ваших товаров/услуг, рассказать о
+                характеристиках предлагаемых товаров, создать любую
+                удобную, соответствующую задачам вашего бизнеса, структуру каталога.
+              </p>
+              <p>
+                Примечание. Обращаем Ваше внимание, что текстовая информация
+                на сайте должна быть индивидуальной, не скопированной с других
+                интернет-ресурсов, о чем указано в рекомендациях Яндекса:
+                «Мы стараемся не индексировать или не ранжировать высоко сайты,
+                копирующие информацию с других ресурсов и не создающие
+                оригинального контента или сервиса».
+              </p>
+              <p>
+                Пример заполнения страницы:
+              </p>
+              <p>
+                Основным направлением деятельности компании является изготовление и реализация …
+                (Укажите направление деятельности Вашей компании).
+              </p>
+            </div>
+          </div>
+          <!--          ************** Отзывы ***************-->
+          <div class="product-main__info tab-container" data-tab="5">
+            <div class="product-main__info-title">Отзывы</div>
+            <div class="product-main__info-hidden-block">
+              <!--            ************** Если пользователь не зарегистрирован **************-->
+              <form class="product-main__form-authorization">
+                <div class="product-main__form-title">
+                  Авторизуйтесь, чтобы оставить комментарий
+                </div>
+                <label class="product-main__form-label">
+                  <span>Введите Ваш e-mail:</span>
+                  <input type="email">
+                </label>
+                <label class="product-main__form-label">
+                  <span>Введите Ваш пароль:</span>
+                  <input type="password">
+                </label>
+                <button class="product-main__form-btn" type="submit">Войти</button>
+                <label>
+                  <input type="checkbox">
+                  <span>Запомнить меня</span>
+                </label>
+                <a class="product-main__form-btn" href="#">Регистрация</a>
+                <div class="product-main__form-text">
+                  Если Вы уже зарегистрированы на нашем сайте, но
+                  забыли пароль или Вам не пришло письмо подтверждения,
+                  воспользуйтесь формой восстановления пароля.
+                </div>
+                <a class="product-main__form-btn" href="#">Восстановить пароль</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="accessories">
+      <div class="accessories__title">Аксессуары</div>
+      <div class="swiper-container accessories-slider">
+        <div class="swiper-wrapper">
+<!--          ********* Слайд **********-->
+          <div class="swiper-slide">
+            <div class="accessories__block">
+              <a class="accessories__img-block" href="#">
+                <img src="src/img/product3.png" alt="">
+              </a>
+              <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS</a></h2>
               <div class="products-main__item-price-block">
                 <div class="products-main__item-price"><span>33.40</span> руб.</div>
                 <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
                 <div class="products-main__discount">Описание Товарная скидка</div>
               </div>
-              <div class="products-main__item-amount">
-                <span>Кол-во:</span>
-                <div class="number-size">
-                  <button class="minus" type="button">-</button>
-                  <label>
-                    <input type="number" value="1" maxlength="4">
-                  </label>
-                  <button class="plus" type="button">+</button>
-                </div>
-              </div>
-              <div class="products-main__item-add-cart">
-                <button type="submit">В корзину</button>
-              </div>
             </div>
-          </form>
-        </article>
-        <!--        ********** Товар **********-->
-        <article class="products-main__item">
-          <form>
-            <div class="products-main__item-top">
-              <a class="products-main__item-img-block" href="#">
-                <img src="img/product1.png" width="200" height="200" alt="">
+          </div>
+          <!--          ********* Слайд **********-->
+          <div class="swiper-slide">
+            <div class="accessories__block">
+              <a class="accessories__img-block" href="#">
+                <img src="src/img/product3.png" alt="">
               </a>
-              <div class="products-main__item-info-block">
-                <h2><a href="#">FDR-AX33754</a></h2>
-                <ul class="goods__price-rating">
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                </ul>
-                <div class="products-main__article">
-                  Артикул: <span>428514169</span>
-                </div>
-              </div>
-            </div>
-            <div class="products-main__item-bottom">
+              <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS</a></h2>
               <div class="products-main__item-price-block">
-                <div class="products-main__item-price"><span>3343433387.40</span> руб.</div>
-                <div class="products-main__item-old-price"><span>33387.40</span> руб. </div>
+                <div class="products-main__item-price"><span>33.40</span> руб.</div>
+                <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
                 <div class="products-main__discount">Описание Товарная скидка</div>
               </div>
-              <div class="products-main__item-amount">
-                <span>Кол-во:</span>
-                <div class="number-size">
-                  <button class="minus" type="button">-</button>
-                  <label>
-                    <input type="number" value="1" maxlength="4">
-                  </label>
-                  <button class="plus" type="button">+</button>
-                </div>
-              </div>
-              <div class="products-main__item-add-cart">
-                <button type="submit">В корзину</button>
-              </div>
             </div>
-          </form>
-        </article>
-        <!--        ********** Товар **********-->
-        <article class="products-main__item">
-          <form>
-            <div class="products-main__item-top">
-              <a class="products-main__item-img-block" href="#">
-                <img src="img/product1.png" width="200" height="200" alt="">
+          </div>
+          <!--          ********* Слайд **********-->
+          <div class="swiper-slide">
+            <div class="accessories__block">
+              <a class="accessories__img-block" href="#">
+                <img src="src/img/product3.png" alt="">
               </a>
-              <div class="products-main__item-info-block">
-                <h2><a href="#">FDR-AX33754</a></h2>
-                <ul class="goods__price-rating">
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                </ul>
-                <div class="products-main__article">
-                  Артикул: <span>428514169</span>
-                </div>
-              </div>
-            </div>
-            <div class="products-main__item-bottom">
+              <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS</a></h2>
               <div class="products-main__item-price-block">
-                <div class="products-main__item-price"><span>33387.40</span> руб.</div>
-                <div class="products-main__item-old-price"><span>33387.40</span> руб. </div>
+                <div class="products-main__item-price"><span>33.40</span> руб.</div>
+                <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
                 <div class="products-main__discount">Описание Товарная скидка</div>
               </div>
-              <div class="products-main__item-amount">
-                <span>Кол-во:</span>
-                <div class="number-size">
-                  <button class="minus" type="button">-</button>
-                  <label>
-                    <input type="number" value="1" maxlength="4">
-                  </label>
-                  <button class="plus" type="button">+</button>
-                </div>
-              </div>
-              <div class="products-main__item-add-cart">
-                <button type="submit">В корзину</button>
-              </div>
             </div>
-          </form>
-        </article>
-        <!--        ********** Товар **********-->
-        <article class="products-main__item">
-          <form>
-            <div class="products-main__item-top">
-              <a class="products-main__item-img-block" href="#">
-                <img src="img/product1.png" width="200" height="200" alt="">
-              </a>
-              <div class="products-main__item-info-block">
-                <h2><a href="#">FDR-AX33754</a></h2>
-                <ul class="goods__price-rating">
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                </ul>
-                <div class="products-main__article">
-                  Артикул: <span>428514169</span>
-                </div>
-              </div>
-            </div>
-            <div class="products-main__item-bottom">
-              <div class="products-main__item-price-block">
-                <div class="products-main__item-price"><span>33387.40</span> руб.</div>
-                <div class="products-main__item-old-price"><span>33387.40</span> руб. </div>
-                <div class="products-main__discount">Описание Товарная скидка</div>
-              </div>
-              <div class="products-main__item-amount">
-                <span>Кол-во:</span>
-                <div class="number-size">
-                  <button class="minus" type="button">-</button>
-                  <label>
-                    <input type="number" value="1" maxlength="4">
-                  </label>
-                  <button class="plus" type="button">+</button>
-                </div>
-              </div>
-              <div class="products-main__item-add-cart">
-                <button type="submit">В корзину</button>
-              </div>
-            </div>
-          </form>
-        </article>
-        <!--        ********** Товар **********-->
-        <article class="products-main__item">
-          <form>
-            <div class="products-main__item-top">
-              <a class="products-main__item-img-block" href="#">
-                <img src="img/product1.png" width="200" height="200" alt="">
-              </a>
-              <div class="products-main__item-info-block">
-                <h2><a href="#">FDR-AX33754</a></h2>
-                <ul class="goods__price-rating">
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars goods__price-stars--full"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                  <li class="goods__price-stars"></li>
-                </ul>
-                <div class="products-main__article">
-                  Артикул: <span>428514169</span>
-                </div>
-              </div>
-            </div>
-            <div class="products-main__item-bottom">
-              <div class="products-main__item-price-block">
-                <div class="products-main__item-price"><span>33387.40</span> руб.</div>
-                <div class="products-main__item-old-price"><span>33387.40</span> руб. </div>
-                <div class="products-main__discount">Описание Товарная скидка</div>
-              </div>
-              <div class="products-main__item-amount">
-                <span>Кол-во:</span>
-                <div class="number-size">
-                  <button class="minus" type="button">-</button>
-                  <label>
-                    <input type="number" value="1" maxlength="4">
-                  </label>
-                  <button class="plus" type="button">+</button>
-                </div>
-              </div>
-              <div class="products-main__item-add-cart">
-                <button type="submit">В корзину</button>
-              </div>
-            </div>
-          </form>
-        </article>
+          </div>
+         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-    </main>
-<!--    ******************** Пагинация ******************-->
-    <ul class="pagination__list content-wrapper">
-      <li class="pagination__item page-first page-arrow"><a href="#"></a></li>
-      <li class="pagination__item page__prev page-arrow"><a href="#"></a></li>
-      <li class="pagination__item page__num page__num--active"><a href="#">1</a></li>
-      <li class="pagination__item page__num"><a href="#">2</a></li>
-      <li class="pagination__item page__next page-arrow"><a href="#"></a></li>
-      <li class="pagination__item page__last page-arrow"><a href="#"></a></li>
-    </ul>
+    </section>
   </div>
 <!--  ************** Правый раздела в товаре *****************-->
-  <aside class="aside-products-right">
+  <aside class="aside-products-right aside-right-product">
     <div class="info-block">
-      <img src="img/info-img.jpg" width="220" height="281" alt="">
+      <img src="src/img/info-img.jpg" width="220" height="281" alt="">
     </div>
-    <div class="products-filter">
-      <div class="products-filter__title">
-        Подбор по параметрам
+<!--    *********** Похожие товары слайдер ***********-->
+    <div class="similar-products">
+      <div class="similar-products__title">Похожие</div>
+      <div class="swiper-container similar-products-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!--      ************** Товар **********-->
+            <div class="similar-products__block">
+              <a href="#" class="similar-products__img-block">
+                <img src="src/img/product-blue.png" alt="">
+              </a>
+              <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS</a></h2>
+              <div class="products-main__item-price-block">
+                <div class="products-main__item-price"><span>3333.40</span> руб.</div>
+                <div class="products-main__item-old-price"><span>33333.40</span> руб. </div>
+                <div class="products-main__discount">Описание Товарная скидка</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!--      ************** Товар **********-->
+            <div class="similar-products__block">
+              <a href="#" class="similar-products__img-block">
+                <img src="src/img/product-blue.png" alt="">
+              </a>
+              <h2><a href="#">Alpha A5100 Kit 16-50 f/3.5-5.6 OS</a></h2>
+              <div class="products-main__item-price-block">
+                <div class="products-main__item-price"><span>33.40</span> руб.</div>
+                <div class="products-main__item-old-price"><span>3.40</span> руб. </div>
+                <div class="products-main__discount">Описание Товарная скидка</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <form class="products-filter__options-form">
-        <!--              ********** Поле формы ************-->
-        <div class="options__item options__price">
-          <div class="options__item-title">
-            Цена
-          </div>
-          <div class="options__price-minmax">
-            <span>от</span>
-            <span>до</span>
-          </div>
-          <input type="text" class="js-range-slider" name="my_range" value=""
-                 data-type="double"
-                 data-min="0"
-                 data-max="500000"
-                 data-from="0"
-                 data-to="500000"
-          />
-          <div class="options__price-range">
-            <label>
-              <input class="options__min-price" type="text">
-            </label>
-            <label>
-              <input class="options__max-price" type="text">
-            </label>
-          </div>
-        </div>
-        <div class="options__item options__item--checkbox">
-          <div class="options__item-title">
-            Производитель:
-          </div>
-          <label>
-            <input class="options__input" type="checkbox"><span>Производитель 1</span>
-          </label>
-          <label>
-            <input class="options__input" type="checkbox"><span>Производитель 1</span>
-          </label>
-          <label>
-            <input class="options__input" type="checkbox"><span>Производитель 1</span>
-          </label>
-          <label>
-            <input class="options__input" type="checkbox"><span>Производитель 1</span>
-          </label>
-        </div>
-        <div class="options__item">
-          <div class="options__item-title">
-            Текст:
-          </div>
-          <label>
-            <input class="options__input" type="text">
-          </label>
-        </div>
-        <!--              ********** Поле формы ************-->
-        <div class="options__item">
-          <div class="options__item-title">
-            Выберите категорию:
-          </div>
-          <label>
-            <select class="options__select" name="category">
-              <option value="1">Все</option>
-              <option value="2">Фотоаппараты</option>
-              <option value="3">Nikon</option>
-              <option value="4">Canon</option>
-              <option value="5">Canon</option>
-              <option value="6">Canon</option>
-              <option value="7">Canon</option>
-              <option value="8">Canon</option>
-              <option value="9">Canon</option>
-              <option value="10">Canon</option>
-            </select>
-          </label>
-        </div>
-        <!--              ********** Поле формы ************-->
-        <div class="options__item">
-          <div class="options__item-title">
-            Производитель:
-          </div>
-          <label>
-            <select class="options__select" name="category">
-              <option value="1">Все</option>
-              <option value="2">Фотоаппараты</option>
-              <option value="3">Nikon</option>
-              <option value="4">Canon</option>
-              <option value="5">Canon</option>
-              <option value="6">Canon</option>
-              <option value="7">Canon</option>
-              <option value="8">Canon</option>
-              <option value="9">Canon</option>
-              <option value="10">Canon</option>
-            </select>
-          </label>
-        </div>
-        <!--              ********** Поле формы ************-->
-        <div class="options__item">
-          <div class="options__item-title">
-            Новинка:
-          </div>
-          <label>
-            <select class="options__select" name="category">
-              <option value="1">Все</option>
-              <option value="2">Фотоаппараты</option>
-              <option value="3">Nikon</option>
-              <option value="4">Canon</option>
-              <option value="5">Canon</option>
-              <option value="6">Canon</option>
-              <option value="7">Canon</option>
-              <option value="8">Canon</option>
-              <option value="9">Canon</option>
-              <option value="10">Canon</option>
-            </select>
-          </label>
-        </div>
-        <!--              ********** Поле формы ************-->
-        <div class="options__item">
-          <div class="options__item-title">
-            Спецпредложение:
-          </div>
-          <label>
-            <select class="options__select" name="category">
-              <option value="1">Все</option>
-              <option value="2">Фотоаппараты</option>
-              <option value="3">Nikon</option>
-              <option value="4">Canon</option>
-              <option value="5">Canon</option>
-              <option value="6">Canon</option>
-              <option value="7">Canon</option>
-              <option value="8">Canon</option>
-              <option value="9">Canon</option>
-              <option value="10">Canon</option>
-            </select>
-          </label>
-        </div>
-        <!--              ********** Поле формы ************-->
-        <div class="options__item">
-          <div class="options__item-title">
-            Результатов на странице:
-          </div>
-          <label>
-            <select class="options__select" name="category">
-              <option value="1">Все</option>
-              <option value="2">Фотоаппараты</option>
-              <option value="3">Nikon</option>
-              <option value="4">Canon</option>
-              <option value="5">Canon</option>
-              <option value="6">Canon</option>
-              <option value="7">Canon</option>
-              <option value="8">Canon</option>
-              <option value="9">Canon</option>
-              <option value="10">Canon</option>
-            </select>
-          </label>
-        </div>
-        <div>
-          <button type="submit">Показать</button>
-          <span class="products-filter__find-number">155</span>
-        </div>
-        <button type="reset">Сбросить фильтр</button>
-      </form>
     </div>
   </aside>
 </div>
@@ -1163,38 +1305,38 @@
       <div class="footer__social">
         <div class="footer__social-title">Мы в сети:</div>
         <a href="#">
-          <img src="img/icon-facebook.png" width="30" height="30" alt="">
+          <img src="src/img/icon-facebook.png" width="30" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-twitter.png" width="30" height="30" alt="">
+          <img src="src/img/icon-twitter.png" width="30" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-vk.png" width="30" height="30" alt="">
+          <img src="src/img/icon-vk.png" width="30" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-youtube.png" width="30" height="30" alt="">
+          <img src="src/img/icon-youtube.png" width="30" height="30" alt="">
         </a>
       </div>
       <!--        ************* Оплата *************-->
       <div class="footer__payment">
         <div class="footer__payment-title">Мы принимаем:</div>
         <a href="#">
-          <img src="img/icon-paypal.png" width="48" height="30" alt="">
+          <img src="src/img/icon-paypal.png" width="48" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-qiwi.png" width="48" height="30" alt="">
+          <img src="src/img/icon-qiwi.png" width="48" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-mastercard.png" width="48" height="30" alt="">
+          <img src="src/img/icon-mastercard.png" width="48" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-visa.png" width="48" height="30" alt="">
+          <img src="src/img/icon-visa.png" width="48" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-yamoney.png" width="48" height="30" alt="">
+          <img src="src/img/icon-yamoney.png" width="48" height="30" alt="">
         </a>
         <a href="#">
-          <img src="img/icon-webmoney.png" width="48" height="30" alt="">
+          <img src="src/img/icon-webmoney.png" width="48" height="30" alt="">
         </a>
       </div>
     </div>
@@ -1239,13 +1381,43 @@
   </div>
 
 </div>
+<!--************ Купить в один клик ************-->
+<div class="modal__one-click modal" id="modal__one-click">
+  <div class="modal__title">
+    Купить в один клик
+  </div>
+  <form class="modal__form" action="">
+    <label>
+      <span class="modal__input-name">
+        Ваше имя:
+      </span>
+      <input type="text">
+    </label>
+    <label>
+      <span class="modal__input-name">
+        Ваш контактный телефон:
+      </span>
+      <input class="form-phone" type="text">
+    </label>
+    <label>
+      <span class="modal__input-name">
+        Комментарий:
+      </span>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </label>
+    <button class="product-main__form-btn" type="submit">Отправить</button>
+  </form>
+</div>
 <!--  ************ Скрипты ***********-->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/ion.rangeSlider.min.js"></script>
-<script src="js/select2.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/ion.rangeSlider.min.js"></script>
+<script src="src/js/select2.min.js"></script>
+<script src="src/js/jquery.sticky.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/jquery.maskedinput.min.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script src="src/js/script.js"></script>
 </body>
 </html>
