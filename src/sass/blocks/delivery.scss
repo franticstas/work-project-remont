@@ -1,0 +1,70 @@
+/*
+ * Стили для страницы Доставка
+ */
+.delivery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.delivery__item {
+  border-bottom: 1px solid $textColor;
+  padding-bottom: 30px;
+  margin-top: 30px;
+
+  @include media(480px) {
+    display: flex;
+  }
+}
+
+.delivery__item:last-child {
+  border: none;
+}
+
+.delivery__img-block {
+  @include media(480px) {
+    flex: 1 0 160px;
+    margin-right: 15px;
+  }
+}
+
+
+.delivery__item:nth-child(2n) .delivery__img-block {
+  @include media(480px) {
+    order: 2;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+.delivery__text-block {
+
+}
+
+.delivery__title {
+  font-size: 18px;
+}
+
+.delivery__description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.delivery__text-block a {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $textColor;
+  padding: 5px 10px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: $textColor;
+    color: #ffffff;
+  }
+}

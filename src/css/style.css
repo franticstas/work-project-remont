@@ -4087,3 +4087,60 @@ p {
 
 .how-to-buy__text p {
   font-size: 14px; }
+
+/*
+ * Стили для страницы Доставка
+ */
+.delivery__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.delivery__item {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 30px;
+  margin-top: 30px; }
+  @media (min-width: 480px) {
+    .delivery__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.delivery__item:last-child {
+  border: none; }
+
+@media (min-width: 480px) {
+  .delivery__img-block {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 160px;
+            flex: 1 0 160px;
+    margin-right: 15px; } }
+
+@media (min-width: 480px) {
+  .delivery__item:nth-child(2n) .delivery__img-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 15px;
+    margin-right: 0; } }
+
+.delivery__title {
+  font-size: 18px; }
+
+.delivery__description {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.delivery__text-block a {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #707070;
+  padding: 5px 10px; }
+  .delivery__text-block a:active, .delivery__text-block a:hover, .delivery__text-block a:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-color: #707070;
+    color: #ffffff; }
