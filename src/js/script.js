@@ -507,8 +507,6 @@ if ($(document).width() < 940) {
   }
 }
 
-$('.form-phone').mask('+7 (999) 999-99-99');
-
 if ($(document).width() > 939) {
   //Табы в товаре
   var tabCtrl = '.tab-control';
@@ -538,3 +536,9 @@ if ($(document).width() > 939) {
   tabInit();
 }
 
+//Просмотр пунктов как купить
+$('.how-to-buy__title span').click(function () {
+  $(this).parent().parent().toggleClass('how-to-buy__item--open');
+});
+
+$('.form-phone').mask('+7 (999) 999-99-99');
