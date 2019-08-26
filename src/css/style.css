@@ -432,6 +432,11 @@ p {
   margin-right: 10px;
   margin-top: 0; }
 
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 /*
  * Стили для хедера
  */
@@ -4144,3 +4149,42 @@ p {
     outline-offset: 0;
     background-color: #707070;
     color: #ffffff; }
+
+/*
+ * Стили для страницы Отзывы
+ */
+.reviews__item {
+  font-size: 15px;
+  padding: 7px;
+  line-height: 1.25;
+  margin-bottom: 10px; }
+
+.reviews__item:nth-child(odd) {
+  background-color: #f0f0f0; }
+
+.reviews__form {
+  font-size: 15px; }
+
+.reviews__form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px; }
+
+.reviews__form input,
+.reviews__form textarea {
+  border-radius: 18px;
+  border: 1px solid #e0e0e0;
+  padding: 5px 12px;
+  max-width: 350px; }
+
+.red-input {
+  position: relative; }
+  .red-input::after {
+    position: absolute;
+    content: "*";
+    color: red; }
