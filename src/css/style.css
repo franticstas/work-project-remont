@@ -425,6 +425,13 @@ p {
       padding-left: 0;
       padding-right: 0; } }
 
+.main__info .main-block__text img {
+  max-width: 360px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  margin-top: 0; }
+
 /*
  * Стили для хедера
  */
