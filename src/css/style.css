@@ -2404,7 +2404,41 @@ p {
   min-width: 280px;
   padding: 13px 20px 5px;
   border-radius: 3px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 330px;
+  display: none; }
+
+.modal__title {
+  color: #404040;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px; }
+
+.modal label {
+  margin-bottom: 15px;
+  display: block; }
+
+.modal__input-name {
+  display: block;
+  color: #909090;
+  font-size: 13px;
+  margin-bottom: 5px; }
+
+.modal__form input,
+.modal__form textarea {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+  border: none;
+  border-radius: 2px; }
+
+.modal__form textarea {
+  height: auto; }
 
 /*
  * БЛОК ХЛЕБНЫЕ КРОШКИ
@@ -3178,6 +3212,54 @@ p {
     outline-offset: 0;
     text-decoration: underline; }
 
+.similar-products {
+  /*Похожие товары*/
+  border: 2px solid #f2b22f;
+  border-radius: 3px;
+  padding: 18px;
+  margin-bottom: 20px; }
+
+.similar-products-slider {
+  padding-bottom: 20px; }
+
+.similar-products__title {
+  color: #f2b22f;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; }
+
+.similar-products__block h2 a {
+  color: #375eac;
+  font-size: 15px; }
+  .similar-products__block h2 a:active, .similar-products__block h2 a:hover, .similar-products__block h2 a:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline; }
+
+.similar-products__img-block {
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #ededed;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.similar-products__img-block img {
+  width: 100%;
+  max-width: 200px;
+  height: auto; }
+
+.similar-products__block .products-main__item-price-block {
+  border: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 /*
  * Стили для пагинации
  */
@@ -3307,7 +3389,7 @@ p {
     outline-offset: 0; }
 
 .gallery-product-thumbs {
-  max-height: 215px;
+  max-height: 225px;
   margin-right: 15px; }
 
 .gallery-product-thumbs .swiper-wrapper {
@@ -3652,7 +3734,7 @@ p {
   border-radius: 3px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  padding: 0 16px;
+  padding: 10px 16px;
   margin-right: 20px;
   margin-bottom: 10px;
   height: 40px;
@@ -3710,7 +3792,8 @@ p {
   display: block; }
 
 .product-main__bottom {
-  /*Нижний раздел товара*/ }
+  /*Нижний раздел товара*/
+  margin-top: 20px; }
   @media (min-width: 940px) {
     .product-main__bottom {
       margin-right: 10px; } }
@@ -3724,17 +3807,56 @@ p {
   padding: 1px 20px 15px;
   margin-bottom: 20px; }
 
-.product-main__info--active {
-  border-top-color: #6c7db5;
-  -webkit-box-shadow: inset 0 1px 0 #6c7db5;
-          box-shadow: inset 0 1px 0 #6c7db5; }
+.product-main__info-hidden-block {
+  display: none; }
+  @media (min-width: 940px) {
+    .product-main__info-hidden-block {
+      display: block; } }
+
+.tab-control {
+  /*ТАБЫ*/
+  display: none; }
+  @media (min-width: 940px) {
+    .tab-control {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.tab-control .item {
+  padding: 13px 20px;
+  color: #ea4a4a;
+  background: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-top: 2px solid transparent;
+  cursor: pointer; }
+
+.tab-control .activeTab {
+  margin-bottom: -1px;
+  color: #6c7db5;
+  border-color: #e0e0e0;
+  border-bottom-color: #fff;
+  border-top: 2px solid #6c7db5;
+  border-radius: 3px 3px 0 0; }
+
+@media (max-width: 939px) {
+  .product-main__info--active {
+    border-top-color: #6c7db5;
+    -webkit-box-shadow: inset 0 1px 0 #6c7db5;
+            box-shadow: inset 0 1px 0 #6c7db5; } }
 
 .product-main__info-title {
   color: #ea4a4a;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  padding-top: 15px; }
+  padding-top: 15px;
+  cursor: pointer; }
+  @media (min-width: 940px) {
+    .product-main__info-title {
+      display: none; } }
 
 .product-main__info--active .product-main__info-title {
   color: #6c7db5; }
@@ -3859,41 +3981,50 @@ p {
 .product-main__form-text {
   margin-bottom: 10px; }
 
-.product-main__info-hidden-block {
-  display: none; }
+/*
+ * Стили блока аксессуары
+*/
+@media (min-width: 940px) {
+  .accessories {
+    margin-right: 10px; } }
 
-.similar-products {
-  /*Похожие товары*/
-  border: 2px solid #f2b22f;
-  border-radius: 3px;
-  padding: 18px;
-  margin-bottom: 20px; }
+.accessories__title {
+  color: #ea4a4a;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 25px 0; }
 
-.similar-products-slider {
+.accessories-slider {
   padding-bottom: 20px; }
 
-.similar-products__title {
-  color: #f2b22f;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold; }
-
-.similar-products__block h2 a {
-  color: #375eac;
-  font-size: 15px; }
-
-.similar-products__img-block {
+.accessories__img-block {
   text-align: center;
   margin-bottom: 10px;
   border: 1px solid #ededed;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-.similar-products__img-block img {
+.accessories__img-block img {
   width: 100%;
   max-width: 200px;
   height: auto; }
 
-.similar-products__block .products-main__item-price-block {
-  border: none; }
+.accessories__block h2 a {
+  color: #375eac;
+  font-size: 15px; }
+  .accessories__block h2 a:active, .accessories__block h2 a:hover, .accessories__block h2 a:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline; }
+
+.accessories__block .products-main__item-price-block {
+  border: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

@@ -1,0 +1,58 @@
+/*
+ * Стили блока аксессуары
+*/
+.accessories {
+  @include tablet {
+    margin-right: 10px;
+  }
+}
+
+.accessories__title {
+  color: #ea4a4a;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+.accessories-slider {
+  padding-bottom: 20px;
+}
+
+.accessories__block {
+
+}
+
+.accessories__img-block {
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #ededed;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accessories__img-block img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.accessories__block h2 a {
+  color: #375eac;
+  font-size: 15px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}
+
+.accessories__block .products-main__item-price-block {
+  border: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
