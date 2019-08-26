@@ -1,0 +1,39 @@
+/*
+ * Стили Контактов
+ */
+.contacts__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.contacts__block b {
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+.contacts__phones-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__phones-block a {
+  color: $textColor;
+  font-size: 15px;
+  margin-bottom: 5px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}
+
+.contacts__map {
+  min-height: 300px;
+  margin-top: 25px;
+}

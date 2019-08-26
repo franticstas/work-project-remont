@@ -4184,7 +4184,44 @@ p {
 
 .red-input {
   position: relative; }
-  .red-input::after {
-    position: absolute;
-    content: "*";
-    color: red; }
+
+/*
+ * Стили Контактов
+ */
+.contacts__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  font-size: 15px; }
+
+.contacts__block b {
+  margin-right: 20px;
+  min-width: 100px; }
+
+.contacts__phones-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.contacts__phones-block a {
+  color: #707070;
+  font-size: 15px;
+  margin-bottom: 5px; }
+  .contacts__phones-block a:active, .contacts__phones-block a:hover, .contacts__phones-block a:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline; }
+
+.contacts__map {
+  min-height: 300px;
+  margin-top: 25px; }

@@ -32,10 +32,4 @@
 
 .red-input {
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "*";
-    color: red;
-  }
 }
