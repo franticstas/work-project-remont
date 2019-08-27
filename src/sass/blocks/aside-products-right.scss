@@ -206,3 +206,129 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.buy-without-reg {/*Купить без регистрации*/
+  width: 100%;
+  padding: 27px 18px 17px;
+  border: 2px solid #f2b22f;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #606060;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(550px) {
+    width: 49%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.buy-without-reg__link {
+  margin-top: auto;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  max-width: 180px;
+  background-color: #f2b22f;
+  background-image: linear-gradient(to top, #f0a628 0%, #f4be36 100%);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: #ffffff;
+
+  @include tablet {
+    margin-top: 30px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-image: linear-gradient(to top, #ee9b21 0%, #f6c93d 100%);
+  }
+}
+
+.cart-checkout {/*Оформить заказ*/
+  margin-bottom: 20px;
+  padding: 15px 18px 17px;
+  border: 2px solid #6c7db5;
+  border-radius: 3px;
+  width: 100%;
+  
+
+  @include media(550px) {
+    width: 49%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cart-checkout__title {
+  margin-bottom: 22px;
+  color: #404040;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cart-checkout span {
+  display: block;
+  color: #909090;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.cart-checkout label {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cart-checkout input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.07);
+  padding-left: 10px;
+}
+
+.cart-checkout button {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 180px;
+  padding: 4px 8px;
+  background-color: #6c7db5;
+  background-image: linear-gradient(to top, #5c6aaa 0%, #7c90c0 100%);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-checout__wrapper {
+  display: flex;
+  flex-direction: column;
+  @include media(550px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+}

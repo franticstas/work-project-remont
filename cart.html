@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Магазин техники" />
+  <meta name="description" content="Магазин техники" />
+  <link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="src/css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="src/css/select2.min.css">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Магазин техники</title>
+</head>
+<body>
+<header class="header">
+  <!--    **************** Верхний хедер ***********-->
+  <div class="top-header">
+    <div class="wrapper">
+      <button class="top-nav__open">
+        <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+      </button>
+      <!--      ************** Верхнее меню **************-->
+      <nav class="top-nav">
+        <button class="top-nav__close"><span class="visually-hidden">Закрыть меню</span></button>
+        <ul class="top-nav__list">
+          <li class="top-nav__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#">Как купить?</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#">Оплата и доставка</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="top-header__user-block">
+        <a class="top-header__user-enter" data-fancybox data-src="#modal__lk" href="javascript:;">
+          <span>Авторизоваться</span>
+        </a>
+        <button class="top-header__search">
+          <span class="visually-hidden">Поиск</span>
+        </button>
+      </div>
+      <div class="top-header__search-block">
+        <!--        ************** Подбор по параметрам ************-->
+        <div class="top-header__options">
+          <button class="top-header__options-button">
+            <span class="visually-hidden">Подбор по параметрам</span>
+          </button>
+          <div class="top-header__options-form-block">
+            <button class="top-header__options-form-close">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <form class="top-header__options-form">
+              <!--              ********** Поле формы ************-->
+              <div class="options__item options__price">
+                <div class="options__item-title">
+                  Цена
+                </div>
+                <div class="options__price-minmax">
+                  <span>от</span>
+                  <span>до</span>
+                </div>
+                <input type="text" class="js-range-slider" name="my_range" value=""
+                       data-type="double"
+                       data-min="0"
+                       data-max="500000"
+                       data-from="0"
+                       data-to="500000"
+                />
+                <div class="options__price-range">
+                  <label>
+                    <input class="options__min-price" type="text">
+                  </label>
+                  <label>
+                    <input class="options__max-price" type="text">
+                  </label>
+                </div>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Название:
+                </div>
+                <label>
+                  <input class="options__input" type="text">
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Артикул:
+                </div>
+                <label>
+                  <input class="options__input" type="text">
+                </label>
+              </div>
+              <div class="options__item">
+                <div class="options__item-title">
+                  Текст:
+                </div>
+                <label>
+                  <input class="options__input" type="text">
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Выберите категорию:
+                </div>
+                <label>
+                  <select class="options__select" name="category">
+                    <option value="1">Все</option>
+                    <option value="2">Фотоаппараты</option>
+                    <option value="3">Nikon</option>
+                    <option value="4">Canon</option>
+                    <option value="5">Canon</option>
+                    <option value="6">Canon</option>
+                    <option value="7">Canon</option>
+                    <option value="8">Canon</option>
+                    <option value="9">Canon</option>
+                    <option value="10">Canon</option>
+                  </select>
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Производитель:
+                </div>
+                <label>
+                  <select class="options__select" name="category">
+                    <option value="1">Все</option>
+                    <option value="2">Фотоаппараты</option>
+                    <option value="3">Nikon</option>
+                    <option value="4">Canon</option>
+                    <option value="5">Canon</option>
+                    <option value="6">Canon</option>
+                    <option value="7">Canon</option>
+                    <option value="8">Canon</option>
+                    <option value="9">Canon</option>
+                    <option value="10">Canon</option>
+                  </select>
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Новинка:
+                </div>
+                <label>
+                  <select class="options__select" name="category">
+                    <option value="1">Все</option>
+                    <option value="2">Фотоаппараты</option>
+                    <option value="3">Nikon</option>
+                    <option value="4">Canon</option>
+                    <option value="5">Canon</option>
+                    <option value="6">Canon</option>
+                    <option value="7">Canon</option>
+                    <option value="8">Canon</option>
+                    <option value="9">Canon</option>
+                    <option value="10">Canon</option>
+                  </select>
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Спецпредложение:
+                </div>
+                <label>
+                  <select class="options__select" name="category">
+                    <option value="1">Все</option>
+                    <option value="2">Фотоаппараты</option>
+                    <option value="3">Nikon</option>
+                    <option value="4">Canon</option>
+                    <option value="5">Canon</option>
+                    <option value="6">Canon</option>
+                    <option value="7">Canon</option>
+                    <option value="8">Canon</option>
+                    <option value="9">Canon</option>
+                    <option value="10">Canon</option>
+                  </select>
+                </label>
+              </div>
+              <!--              ********** Поле формы ************-->
+              <div class="options__item">
+                <div class="options__item-title">
+                  Результатов на странице:
+                </div>
+                <label>
+                  <select class="options__select" name="category">
+                    <option value="1">Все</option>
+                    <option value="2">Фотоаппараты</option>
+                    <option value="3">Nikon</option>
+                    <option value="4">Canon</option>
+                    <option value="5">Canon</option>
+                    <option value="6">Canon</option>
+                    <option value="7">Canon</option>
+                    <option value="8">Canon</option>
+                    <option value="9">Canon</option>
+                    <option value="10">Canon</option>
+                  </select>
+                </label>
+              </div>
+              <button type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+        <!--        ************* Форма поиска **************-->
+        <form class="top-header__search-form">
+          <label>
+            <input type="text" placeholder="Найти">
+          </label>
+          <!--          ********** Закрытие формы ***********-->
+          <div class="top-header__search-close"></div>
+          <button type="submit"><span class="visually-hidden">Поиск</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--    ************* Средний хедер ***************-->
+  <div class="middle-header">
+    <div class="wrapper">
+      <div class="middle-header__name-block">
+        <a href="" class="middle-header__name-link">
+          Название компании
+        </a>
+        <div class="middle-header__description">
+          Фототехника и Аксессуары
+        </div>
+      </div>
+      <div class="middle-header__phones-block">
+        <div class="middle-header__phone-links">
+          <a href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00</a>
+          <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+        </div>
+        <div class="middle-header__work-time">
+          Ежедневно: с  09-00 до 20-00
+        </div>
+        <div class="middle-header__search-cart-blocks">
+          <!--          ******** Форма поиска *********-->
+          <div class="middle-header__search-block">
+            <!--        ************** Подбор по параметрам ************-->
+            <div class="middle-header__options">
+              <button class="middle-header__options-button">
+                <span class="visually-hidden">Подбор по параметрам</span>
+              </button>
+              <div class="middle-header__options-form-block">
+                <button class="middle-header__options-form-close">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <form class="middle-header__options-form">
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item options__price">
+                    <div class="options__item-title">
+                      Цена
+                    </div>
+                    <div class="options__price-minmax">
+                      <span>от</span>
+                      <span>до</span>
+                    </div>
+                    <input type="text" class="js-range-slider" name="my_range" value=""
+                           data-type="double"
+                           data-min="0"
+                           data-max="500000"
+                           data-from="0"
+                           data-to="500000"
+                    />
+                    <div class="options__price-range">
+                      <label>
+                        <input class="options__min-price" type="text">
+                      </label>
+                      <label>
+                        <input class="options__max-price" type="text">
+                      </label>
+                    </div>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Название:
+                    </div>
+                    <label>
+                      <input class="options__input" type="text">
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Артикул:
+                    </div>
+                    <label>
+                      <input class="options__input" type="text">
+                    </label>
+                  </div>
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Текст:
+                    </div>
+                    <label>
+                      <input class="options__input" type="text">
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Выберите категорию:
+                    </div>
+                    <label>
+                      <select class="options__select" name="category">
+                        <option value="1">Все</option>
+                        <option value="2">Фотоаппараты</option>
+                        <option value="3">Nikon</option>
+                        <option value="4">Canon</option>
+                        <option value="5">Canon</option>
+                        <option value="6">Canon</option>
+                        <option value="7">Canon</option>
+                        <option value="8">Canon</option>
+                        <option value="9">Canon</option>
+                        <option value="10">Canon</option>
+                      </select>
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Производитель:
+                    </div>
+                    <label>
+                      <select class="options__select" name="category">
+                        <option value="1">Все</option>
+                        <option value="2">Фотоаппараты</option>
+                        <option value="3">Nikon</option>
+                        <option value="4">Canon</option>
+                        <option value="5">Canon</option>
+                        <option value="6">Canon</option>
+                        <option value="7">Canon</option>
+                        <option value="8">Canon</option>
+                        <option value="9">Canon</option>
+                        <option value="10">Canon</option>
+                      </select>
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Новинка:
+                    </div>
+                    <label>
+                      <select class="options__select" name="category">
+                        <option value="1">Все</option>
+                        <option value="2">Фотоаппараты</option>
+                        <option value="3">Nikon</option>
+                        <option value="4">Canon</option>
+                        <option value="5">Canon</option>
+                        <option value="6">Canon</option>
+                        <option value="7">Canon</option>
+                        <option value="8">Canon</option>
+                        <option value="9">Canon</option>
+                        <option value="10">Canon</option>
+                      </select>
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Спецпредложение:
+                    </div>
+                    <label>
+                      <select class="options__select" name="category">
+                        <option value="1">Все</option>
+                        <option value="2">Фотоаппараты</option>
+                        <option value="3">Nikon</option>
+                        <option value="4">Canon</option>
+                        <option value="5">Canon</option>
+                        <option value="6">Canon</option>
+                        <option value="7">Canon</option>
+                        <option value="8">Canon</option>
+                        <option value="9">Canon</option>
+                        <option value="10">Canon</option>
+                      </select>
+                    </label>
+                  </div>
+                  <!--              ********** Поле формы ************-->
+                  <div class="options__item">
+                    <div class="options__item-title">
+                      Результатов на странице:
+                    </div>
+                    <label>
+                      <select class="options__select" name="category">
+                        <option value="1">Все</option>
+                        <option value="2">Фотоаппараты</option>
+                        <option value="3">Nikon</option>
+                        <option value="4">Canon</option>
+                        <option value="5">Canon</option>
+                        <option value="6">Canon</option>
+                        <option value="7">Canon</option>
+                        <option value="8">Canon</option>
+                        <option value="9">Canon</option>
+                        <option value="10">Canon</option>
+                      </select>
+                    </label>
+                  </div>
+                  <button type="submit">Найти</button>
+                </form>
+              </div>
+            </div>
+            <!--        ************* Форма поиска **************-->
+            <form class="middle-header__search-form">
+              <label>
+                <input type="text" placeholder="Найти">
+              </label>
+              <button type="submit"><span class="visually-hidden">Поиск</span></button>
+            </form>
+          </div>
+          <!--          *********** Блок с корзиной ***********-->
+          <a class="middle-header__cart" href="#">
+            <div class="header__cart-total">
+              <span>55</span>
+            </div>
+            <div class="header__cart-sum">
+              <strong>9999990.00</strong>
+              руб.
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--    ************** Нижний хедер *****************-->
+  <div class="bottom-header" id="sticker">
+    <div class="wrapper">
+      <!--        ************* Нижнее меню **************-->
+      <button class="bottom-nav__open" type="button">Каталог товаров</button>
+      <nav class="bottom-header__nav">
+        <div class="bottom-nav__buttons-block">
+          <button class="bottom-nav__close-subnav" type="button"><span class="visually-hidden">Закрыть подменюменю</span></button>
+          <button class="bottom-nav__close-nav" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </div>
+
+        <ul class="bottom-nav__list" id="nav-main">
+          <li class="bottom-nav__item">
+            <a href="222">Фотоаппараты</a>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="123">Объективы</a>
+            <ul class="bottom-subnav__list">
+              <li>
+                <a href="#">Canon</a>
+                <ul>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Nikon</a>
+                <ul>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Sony</a>
+                <ul>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Фотовспышки</a>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Видеокамеры</a>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Аккумуляторы</a>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Штативы</a>
+            <ul class="bottom-subnav__list">
+              <li>
+                <a href="#">Aoka</a>
+              </li>
+              <li>
+                <a href="#">Aputure</a>
+                <ul>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Benro</a>
+              </li>
+            </ul>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Аккумуляторы</a>
+          </li>
+          <li class="bottom-nav__item">
+            <a href="#">Штативы</a>
+            <ul class="bottom-subnav__list">
+              <li>
+                <a href="#">XXXXXXXXXX</a>
+              </li>
+              <li>
+                <a href="#">Aputure</a>
+                <ul>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                  <li>
+                    <a href="#">Объективы Carl Zeiss для Canon</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Benro</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dd_menu">
+            <a class="dropdown-toggle">Еще</a>
+            <ul class="dropdown-menu"></ul>
+          </li>
+        </ul>
+      </nav>
+      <!--          *********** Блок с корзиной ***********-->
+      <a class="bottom-header__cart header__cart" href="#">
+        <div class="bottom-header__cart-total header__cart-total">
+          <span>55</span>
+        </div>
+        <div class="bottom-header__cart-sum header__cart-sum">
+          <strong>9999990.00</strong>
+          руб.
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+<!--*********** Раздел для категорий и товара *****************-->
+<div class="products-wrapper wrapper">
+  <div class="products-main-block">
+    <!--   ******************** ХЛЕБНЫЕ КРОШКИ ***************************-->
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__current">
+          <a>Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <h1>Корзина</h1>
+    <main>
+<!--************ Корзина ***********-->
+      <div class="cart__block">
+        <form>
+          <div class="cart__delete-wrap">
+            <button class="cart__delete-all" type="button">Удалить всё</button>
+          </div>
+          <div class="cart__products-list">
+<!--            ************ Товар ***********-->
+            <div class="cart__products-item">
+            <div class="cart__products-wrapper">
+              <div class="cart__img-wrapper">
+                <a class="cart__products-img-block" href="#">
+                  <img src="src/img/product3.png" width="90" height="90" alt="">
+                </a>
+                <div class="cart__products-title">
+                  <a href="#">Alpha A6000 Body</a>
+                  <div class="product-main__top-code">
+                    Артикул: <span>4545456</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__price-wrapper">
+                <div class="cart__products-price-wrap">
+                  <div class="cart__products-price-title">Цена, руб.</div>
+                  <div class="cart__products-price-wrapper">
+                    34420.00 <br>Со скидкой 33387.40
+                  </div>
+                </div>
+                <div class="cart__products-price-wrap">
+                  <div class="cart__products-price-title">Кол-во</div>
+                  <div class="number-size">
+                    <button class="minus" type="button">-</button>
+                    <label>
+                      <input type="number" value="1" maxlength="4">
+                    </label>
+                    <button class="plus" type="button">+</button>
+                  </div>
+                </div>
+                <div class="cart__products-amount-wrap">
+                  <div class="cart__products-price-title">Цена, руб.</div>
+                  <div class="cart__products-price-wrapper">
+                    33387.40
+                  </div>
+                </div>
+                <button class="cart__delete-product" type="button">
+                  <span class="visually-hidden">Удалить товар</span>
+                </button>
+              </div>
+            </div>
+            <ul class="product-main__bottom-options-list">
+              <li class="product-main__bottom-options-item">
+                <div class="product-main__bottom-options-item-left">
+                  Производитель:
+                </div>
+                <div class="product-main__bottom-options-item-right">
+                  12321312313
+                </div>
+              </li>
+              <li class="product-main__bottom-options-item">
+                <div class="product-main__bottom-options-item-left">
+                  Цвет корпуса
+                </div>
+                <div class="product-main__bottom-options-item-right">
+                  <span class="product-main__bottom-color" style="background-image: url('src/img/product1.png')"></span>
+                </div>
+              </li>
+              <li class="product-main__bottom-options-item">
+                <div class="product-main__bottom-options-item-left">
+                  Тип матрицы
+                </div>
+                <div class="product-main__bottom-options-item-right">
+                  12321312313
+                </div>
+              </li>
+              <li class="product-main__bottom-options-item">
+                <div class="product-main__bottom-options-item-left">
+                  Тип матрицы
+                </div>
+                <div class="product-main__bottom-options-item-right">
+                  12321312313
+                </div>
+              </li>
+              <li class="product-main__bottom-options-item">
+                <div class="product-main__bottom-options-item-left">
+                  Тип матрицы
+                </div>
+                <div class="product-main__bottom-options-item-right">
+                  12321312313
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="cart__products-parameters">Посмотреть параметры</button>
+          </div>
+<!--            ************** Товар **************-->
+            <div class="cart__products-item">
+              <div class="cart__products-wrapper">
+                <div class="cart__img-wrapper">
+                  <a class="cart__products-img-block" href="#">
+                    <img src="src/img/product3.png" width="90" height="90" alt="">
+                  </a>
+                  <div class="cart__products-title">
+                    <div class="cart__products-present">
+                      Подарок
+                    </div>
+                    <a href="#">Alpha A6000 Body</a>
+                    <div class="product-main__top-code">
+                      Артикул: <span>4545456</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__price-wrapper">
+                  <div class="cart__products-price-wrap">
+                    <div class="cart__products-price-title">Цена, руб.</div>
+                    <div class="cart__products-price-wrapper">
+                      34420.00 <br>Со скидкой 33387.40
+                    </div>
+                  </div>
+                  <div class="cart__products-price-wrap">
+                    <div class="cart__products-price-title">Кол-во</div>
+                    <div class="number-size">
+                      <button class="minus" type="button">-</button>
+                      <label>
+                        <input type="number" value="1" maxlength="4">
+                      </label>
+                      <button class="plus" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="cart__products-amount-wrap">
+                    <div class="cart__products-price-title">Цена, руб.</div>
+                    <div class="cart__products-price-wrapper">
+                      33387.40
+                    </div>
+                  </div>
+                  <button class="cart__delete-product" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
+                </div>
+              </div>
+              <ul class="product-main__bottom-options-list">
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Производитель:
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Цвет корпуса
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    <span class="product-main__bottom-color" style="background-image: url('src/img/product1.png')"></span>
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+                <li class="product-main__bottom-options-item">
+                  <div class="product-main__bottom-options-item-left">
+                    Тип матрицы
+                  </div>
+                  <div class="product-main__bottom-options-item-right">
+                    12321312313
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="cart__products-parameters">Посмотреть параметры</button>
+            </div>
+          </div>
+          <div class="cart__amount-wrapper">
+            <button type="button">Пересчитать</button>
+            <div>
+              <span class="cart__amount-text">Сумма:</span>
+              <span class="cart__amount-price">33333.40 руб.</span>
+            </div>
+            <div>
+              <span class="cart__amount-text">Итого:</span>
+              <span class="cart__amount-price">33333.40 руб.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+<!--  ************** Правый раздела в товаре *****************-->
+  <aside class="aside-products-right aside-right-product">
+    <div class="cart-checout__wrapper">
+      <div class="cart-checkout">
+        <div class="cart-checkout__title">
+          Оформить заказ
+        </div>
+        <form>
+          <label>
+            <span>Логин:</span>
+            <input type="text">
+          </label>
+          <label>
+            <span>Пароль:</span>
+            <input type="password">
+          </label>
+          <button type="submit">Войти и оформить заказ</button>
+        </form>
+      </div>
+      <div class="buy-without-reg">
+        <div class="">
+          Для получения персональных и сезонных скидок, а также уникальных предложений
+          предлагаем Вам пройти несложную процедуру
+          <a href="#">регистрации в магазине</a>
+        </div>
+        <a href="#" class="buy-without-reg__link">Купить без регистрации</a>
+      </div>
+    </div>
+    <div class="info-block">
+      <img src="src/img/info-img.jpg" width="220" height="281" alt="">
+    </div>
+  </aside>
+</div>
+<!--  ******************** FOOTER *****************-->
+<footer class="footer">
+  <!--    ****************** Подписка на рассылку *****************-->
+  <section class="footer__subscription">
+    <div class="wrapper">
+      <div class="footer__subscription-title">
+        Подписаться на рассылку выгодных предложений
+      </div>
+      <form class="footer__subscription-form">
+        <label>
+          <input type="email" placeholder="Введите e-mail">
+        </label>
+        <button type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+  <!--    ************* Раздел с навигацией и телефонами *****************-->
+  <section class="footer__info">
+    <div class="wrapper">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Как купить?</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Оплата и доставка</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__phones">
+        <div class="footer__phones-links">
+          <a href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00</a>
+          <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+        </div>
+        <div class="footer__phones-work-time">
+          Ежедневно: с  09-00 до 20-00
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--    ****************** Радел социальных сетей и оплаты *******************-->
+  <section class="footer__social-payment">
+    <div class="wrapper">
+      <!--        *********** Соц сети *************-->
+      <div class="footer__social">
+        <div class="footer__social-title">Мы в сети:</div>
+        <a href="#">
+          <img src="src/img/icon-facebook.png" width="30" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-twitter.png" width="30" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-vk.png" width="30" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-youtube.png" width="30" height="30" alt="">
+        </a>
+      </div>
+      <!--        ************* Оплата *************-->
+      <div class="footer__payment">
+        <div class="footer__payment-title">Мы принимаем:</div>
+        <a href="#">
+          <img src="src/img/icon-paypal.png" width="48" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-qiwi.png" width="48" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-mastercard.png" width="48" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-visa.png" width="48" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-yamoney.png" width="48" height="30" alt="">
+        </a>
+        <a href="#">
+          <img src="src/img/icon-webmoney.png" width="48" height="30" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="footer__copyright">
+    <div class="wrapper">
+      Copyright © - 2019
+    </div>
+  </div>
+</footer>
+<!--**************** Слои маски **************-->
+<div class="mask"></div>
+<!--  ***************** Модальные окна ******************-->
+<div class="modal__lk modal" id="modal__lk">
+  <div class="modal__title">
+    Мой кабинет
+  </div>
+  <form class="modal__form">
+    <label>
+      <span class="modal__input-name">
+        Логин или e-mail:
+      </span>
+      <input type="text">
+    </label>
+    <label>
+      <span class="modal__input-name">
+        Пароль:
+      </span>
+      <input type="password">
+    </label>
+    <button type="submit">Войти</button>
+  </form>
+  <div class="modal__link-block">
+    <div class="modal__forgot-password">
+      <a href="">Забыли пароль?</a>
+      <span>:(</span>
+    </div>
+    <div class="modal__register">
+      <a href="">Регистрация</a>
+      <span>:)</span>
+    </div>
+  </div>
+
+</div>
+<!--************ Купить в один клик ************-->
+<div class="modal__one-click modal" id="modal__one-click">
+  <div class="modal__title">
+    Купить в один клик
+  </div>
+  <form class="modal__form" action="">
+    <label>
+      <span class="modal__input-name">
+        Ваше имя:
+      </span>
+      <input type="text">
+    </label>
+    <label>
+      <span class="modal__input-name">
+        Ваш контактный телефон:
+      </span>
+      <input class="form-phone" type="text">
+    </label>
+    <label>
+      <span class="modal__input-name">
+        Комментарий:
+      </span>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </label>
+    <button class="product-main__form-btn" type="submit">Отправить</button>
+  </form>
+</div>
+<!--  ************ Скрипты ***********-->
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="src/js/ion.rangeSlider.min.js"></script>
+<script src="src/js/select2.min.js"></script>
+<script src="src/js/jquery.sticky.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/jquery.maskedinput.min.js"></script>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

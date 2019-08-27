@@ -364,7 +364,6 @@ $('.product-main__info-mod').click(function() {
 });
 
 $('.product-main__tab-mod').click(function() {
-  console.log('22222222');
   resizeScrenn();
 });
 
@@ -488,7 +487,30 @@ $(function(){
       $('.product-main-show-hide-btn').text('ПОСМОТРЕТЬ ВСЕ ПАРАМЕТРЫ');
     }
   });
+
+  //Открыть параметры в корзине
+  $('.cart__products-parameters').click(function(){
+    //$(this).parent().find('.cart__products-item .product-main__bottom-options-list').slideToggle();
+    // const text = $('.cart__products-parameters').text();
+    // if (text === 'Посмотреть параметры') {
+    //   $('.cart__products-parameters').text('Свернуть');
+    // }
+    // if (text === 'Свернуть') {
+    //   $('.cart__products-parameters').text('Посмотреть параметры');
+    // }
+
+   $(this).parent().find('.product-main__bottom-options-list').slideToggle();
+
+    const text = $(this).text();
+    if (text === 'Посмотреть параметры') {
+      $(this).text('Свернуть');
+    }
+    if (text === 'Свернуть') {
+      $(this).text('Посмотреть параметры');
+    }
+  });
 });
+
 
 if ($(document).width() < 940) {
   //Аккордеон в карточке товара

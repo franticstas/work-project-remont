@@ -1,0 +1,193 @@
+/*
+ * Стили для корзины
+ */
+.cart__block {
+  @include tablet {
+    margin-right: 10px;
+  }
+
+  @include desktop {
+    margin-right: 25px;
+  }
+}
+
+.cart__delete-wrap {
+  text-align: right;
+}
+
+.cart__delete-all {
+  font-size: 14px;
+  color: #f2b22f;
+  text-decoration: underline;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='16px' height='20px' viewBox='0 0 16 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill='%23f2b22f' d='M 0 6 C 0 6 0 3 0 3 C 0 3 16 3 16 3 C 16 3 16 6 16 6 C 16 6 0 6 0 6 Z M 10 2 C 10 2 6 2 6 2 C 6 2 6 3 6 3 C 6 3 4 3 4 3 C 4 3 4 0 4 0 C 4 0 12 0 12 0 C 12 0 12 3 12 3 C 12 3 10 3 10 3 C 10 3 10 2 10 2 Z M 15 18 C 15 19.1 14.1 20 13 20 C 13 20 3 20 3 20 C 1.89 20 1 19.1 1 18 C 1 18 1 7 1 7 C 1 7 15 7 15 7 C 15 7 15 18 15 18 Z M 5 9 C 5 9 3 9 3 9 C 3 9 3 18 3 18 C 3 18 5 18 5 18 C 5 18 5 9 5 9 Z M 9 9 C 9 9 7 9 7 9 C 7 9 7 18 7 18 C 7 18 9 18 9 18 C 9 18 9 9 9 9 Z M 13 9 C 13 9 11 9 11 9 C 11 9 11 18 11 18 C 11 18 13 18 13 18 C 13 18 13 9 13 9 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding-right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: none;
+  }
+}
+
+.cart__products-item {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+.cart__products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart__price-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cart__products-price-title {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #909090;
+}
+
+.cart__products-price-wrap,
+.cart__products-amount-wrap {
+  max-width: 120px;
+  margin: 5px 15px;
+}
+
+.cart__products-img-block {
+  display: inline-block;
+  border: 1px solid $titleColor;
+  margin-right: 20px;
+}
+
+.cart__products-img-block img {
+  display: block;
+  width: 90px;
+  height: 90px;
+}
+
+.cart__products-price-wrapper {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart__products-title a {
+  color: #375eac;
+  font-size: 14px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+}
+
+.cart__products-title .product-main__top-code {
+  border-right: none;
+}
+
+.cart__products-item .product-main__bottom-options-list {
+  max-width: 500px;
+  display: none;
+}
+
+.cart__products-parameters {
+  color: #6c7db5;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+.cart__img-wrapper {
+  display: flex;
+}
+
+.cart__delete-product {/*Удаление товара*/
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' version='1.1' baseProfile='full' xml:space='preserve' x='0px' y='0px' width='16px' height='20px' viewBox='0 0 16 20' preserveAspectRatio='none' shape-rendering='geometricPrecision'%3E'%3Cpath fill='%23f2b22f' d='M 0 6 C 0 6 0 3 0 3 C 0 3 16 3 16 3 C 16 3 16 6 16 6 C 16 6 0 6 0 6 Z M 10 2 C 10 2 6 2 6 2 C 6 2 6 3 6 3 C 6 3 4 3 4 3 C 4 3 4 0 4 0 C 4 0 12 0 12 0 C 12 0 12 3 12 3 C 12 3 10 3 10 3 C 10 3 10 2 10 2 Z M 15 18 C 15 19.1 14.1 20 13 20 C 13 20 3 20 3 20 C 1.89 20 1 19.1 1 18 C 1 18 1 7 1 7 C 1 7 15 7 15 7 C 15 7 15 18 15 18 Z M 5 9 C 5 9 3 9 3 9 C 3 9 3 18 3 18 C 3 18 5 18 5 18 C 5 18 5 9 5 9 Z M 9 9 C 9 9 7 9 7 9 C 7 9 7 18 7 18 C 7 18 9 18 9 18 C 9 18 9 9 9 9 Z M 13 9 C 13 9 11 9 11 9 C 11 9 11 18 11 18 C 11 18 13 18 13 18 C 13 18 13 9 13 9 Z' fill-rule='evenodd'/%3E%3C/svg%3E");
+  border: none;
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.cart__products-present {
+  color: #f2b22f;
+  font-weight: 700;
+}
+
+.cart__amount-wrapper {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.cart__amount-wrapper div {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
+  display: flex;
+}
+
+.cart__amount-wrapper button {
+  color: #fff;
+  background-color: #f2b22f;
+  background-image: linear-gradient(to top, #f0a628 0%, #f4be36 100%);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 5px 11px;
+  cursor: pointer;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    background-image: linear-gradient(to top, #ee9b21 0%, #f6c93d 100%);
+  }
+}
+
+.cart__amount-text {
+  color: #909090;
+  font-size: 15px;
+}
+
+.cart__amount-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: $titleColor;
+  margin-left: auto;
+}
+
