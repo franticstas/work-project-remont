@@ -4184,6 +4184,9 @@ p {
 
 .red-input {
   position: relative; }
+  .red-input::after {
+    content: "*";
+    color: red; }
 
 /*
  * Стили Контактов
@@ -4225,3 +4228,75 @@ p {
 .contacts__map {
   min-height: 300px;
   margin-top: 25px; }
+
+/*
+ * Стили для вопросы и ответы
+ */
+.questions__list {
+  margin-bottom: 20px; }
+
+.questions__item {
+  font-size: 15px;
+  padding: 7px;
+  line-height: 1.25;
+  margin-bottom: 10px; }
+
+.answer__block {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-left: 2px solid #707070; }
+
+.questions__item:nth-child(odd) {
+  background-color: #f0f0f0; }
+
+/*
+ * Стили Новости
+ */
+.news__item {
+  margin-bottom: 25px; }
+
+.news__item h2 a {
+  color: #375eac;
+  text-transform: none;
+  font-size: 22px; }
+  .news__item h2 a:active, .news__item h2 a:hover, .news__item h2 a:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline; }
+
+.news__header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.news__header-block img {
+  margin-top: 0;
+  margin-right: 10px;
+  margin-left: 0; }
+
+.news__text {
+  font-size: 12px; }
+
+.news__bottom-block {
+  margin-top: 10px; }
+
+.news__bottom-block time {
+  font-size: 12px; }
+  .news__bottom-block time::after {
+    content: "/";
+    padding-left: 12px; }
+
+.news__link {
+  padding-left: 12px;
+  font-size: 12px;
+  color: #6c7db5;
+  text-decoration: underline; }
+  .news__link:active, .news__link:hover, .news__link:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: none; }

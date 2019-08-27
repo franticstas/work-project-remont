@@ -1,0 +1,25 @@
+/*
+ * Стили для вопросы и ответы
+ */
+.questions__list {
+  margin-bottom: 20px;
+}
+
+.questions__item {
+  font-size: 15px;
+  padding: 7px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.answer__block {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-left: 2px solid $textColor;
+}
+
+.questions__item:nth-child(odd) {
+  background-color: #f0f0f0;
+}
