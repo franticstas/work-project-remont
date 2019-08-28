@@ -1,0 +1,146 @@
+/*
+ * Стили для страницы заказа
+ */
+.order-form {
+
+}
+
+.order-form__post {
+  border-top: 1px solid #dedede;
+  padding: 20px 0;
+}
+
+.order-form__radio-text {
+  font-size: 14px;
+  line-height: normal;
+  padding: 8px 10px;
+  vertical-align: middle;
+  font-weight: 700;
+  color: $titleColor;
+  cursor: pointer;
+}
+
+.order-form__hidden {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  padding: 15px 20px 10px;
+  flex-direction: column;
+  display: none;
+}
+
+.order-form__hidden span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.order-form__hidden input,
+.order-form__hidden textarea,
+.order-form__hidden select {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  max-width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.order-form__hidden textarea {
+  height: auto;
+}
+
+.order-form__post input[type="radio"] {
+  cursor: pointer;
+}
+
+.order-form__post input[type="radio"]:checked ~ .order-form__hidden {
+  display: flex;
+}
+
+.order-form__ems-post-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.order-form__ems-post-price button {
+  margin-right: 20px;
+}
+
+.checkout-form {/*Оформление заказа*/
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.checkout-form div {
+  margin: 15px 0;
+}
+
+.checkout-form div span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.checkout-form label span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  border-radius: 18px;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.checkout-form button {
+  margin-right: auto;
+}
+
+.order-completed {/*Спасибо за заказ*/
+
+}
+
+.order-completed__item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.order-completed__text {
+  font-weight: 700;
+}
+
+.my-order {/*Ваш заказ*/
+
+}
+
+.my-order fieldset {
+  border: 1px solid #dedede;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.my-order legend {
+  background-color: #ffffff;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.my-order fieldset div {
+  border-bottom: 1px solid #eee;
+  
+}
+
+.my-order fieldset span {
+  padding: 5px 10px;
+  display: inline-block;
+}

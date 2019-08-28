@@ -511,7 +511,6 @@ $(function(){
   });
 });
 
-
 if ($(document).width() < 940) {
   //Аккордеон в карточке товара
   $(document).ready(function() {

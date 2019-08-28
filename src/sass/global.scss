@@ -125,3 +125,37 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.gold-button {
+  border: none;
+  color: #fff;
+  background-color: #f2b22f;
+  background-image: linear-gradient(to top, #f0a628 0%, #f4be36 100%);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  padding: 10px 10px;
+  cursor: pointer;
+
+  :active,
+  :hover,
+  :focus {
+    outline: 0;
+    outline-offset: 0;
+    background-image: linear-gradient(to top, #ee9b21 0%, #f6c93d 100%);
+  }
+}
+
+.back-button {
+  color: #606060;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #eee;
+  background-image: linear-gradient(to top, #ebebeb 0%, #f1f1f1 100%);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 5px 15px 4px 15px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
