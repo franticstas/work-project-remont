@@ -563,3 +563,63 @@ $('.how-to-buy__title span').click(function () {
 });
 
 $('.form-phone').mask('+7 (999) 999-99-99');
+
+//Печать заказа
+function PrintElem(elem) {
+  Popup($(elem).html());
+}
+
+function Popup(data) {
+  var myWindow = window.open('', 'my div', 'height=400,width=600');
+  myWindow.document.write('<html><head><title>Ваш заказ</title>');
+  myWindow.document.write(' <meta name="keywords" content="Магазин техники" />');
+  myWindow.document.write('<link rel="stylesheet" href="src/css/style.css" type="text/css" />');
+  myWindow.document.write('</head><body >');
+  myWindow.document.write(data);
+  myWindow.document.write('</body></html>');
+  myWindow.document.close(); // necessary for IE >= 10
+
+  myWindow.onload=function(){ // necessary if the div contain images
+
+    myWindow.focus(); // necessary for IE >= 10
+    myWindow.print();
+    myWindow.close();
+  };
+}
+
+//Звездный рейтинг
+$('#stars li').on('mouseover', function(){
+  const onStar = parseInt($(this).data('value'), 10);
+
+  $(this).parent().children('li').each(function(e){
+    if (e < onStar) {
+      $(this).addClass('goods__price-stars--full');
+    }
+    else {
+      $(this).removeClass('goods__price-stars--full');
+    }
+  });
+
+  }).on('mouseout', function(){
+    $(this).parent().children('li').each(function(e){
+      $(this).removeClass('goods__price-stars--full');
+    });
+});
+
+$('#stars li').on('click', function(){
+  const onStar = parseInt($(this).data('value'), 10);
+  const stars = $(this).parent().children('li');
+
+  for (i = 0; i < stars.length; i++) {
+    $(stars[i]).removeClass('selected');
+  }
+
+  for (i = 0; i < onStar; i++) {
+    $(stars[i]).addClass('selected');
+  }
+
+  // JUST RESPONSE (Not needed)
+  var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
+  $('.input-stars-rating').val(ratingValue);
+
+});

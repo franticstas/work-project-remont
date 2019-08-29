@@ -36,6 +36,11 @@
   margin-bottom: 20px;
 }
 
+.news-comments form label {
+  margin-bottom: 15px;
+  display: block;
+}
+
 .news-comments form span {
   display: block;
   color: #909090;
@@ -43,12 +48,21 @@
   margin-bottom: 5px;
 }
 
-.news-comments form input {
+.news__textarea-label {
+  width: 100%;
+}
+
+.news-comments form input,
+.news-comments form textarea {
   width: 100%;
   max-width: 300px;
   border-radius: 18px;
   border: 1px solid #e0e0e0;
   padding: 10px;
+}
+
+.news-comments form textarea {
+  max-width: none;
 }
 
 .news-comments form input[type="checkbox"] {

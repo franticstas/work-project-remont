@@ -8,7 +8,7 @@
 
 .modal {
   min-width: 280px;
-  padding: 13px 20px 5px;
+  padding: 13px 20px 15px;
   border-radius: 3px;
   background-color: #ffffff;
   width: 100%;
@@ -49,4 +49,38 @@
 
 .modal__form textarea {
   height: auto;
+}
+.modal__forgot-password,
+.modal__forgot-password a {
+  color: $blue;
+}
+
+.modal__register,
+.modal__register a {
+  color: $yellow;
+}
+
+.modal__forgot-password,
+.modal__register {
+  margin: 5px 0;
+}
+
+.modal label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.modal__lk button {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.modal__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal__buttons-wrapper a {
+  margin: 5px 0;
 }

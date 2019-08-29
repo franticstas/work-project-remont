@@ -6,6 +6,7 @@ var server = require("browser-sync").create();
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require('gulp-csso');
 
 gulp.task("css", function () {
   return gulp.src("src/sass/style.scss")
@@ -15,6 +16,8 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(gulp.dest("src/css"))
+    .pipe(csso())
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 

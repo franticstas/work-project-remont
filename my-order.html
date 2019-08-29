@@ -49,7 +49,7 @@
       </nav>
       <div class="top-header__user-block">
         <a class="top-header__user-enter" data-fancybox data-src="#modal__lk" href="javascript:;">
-          <span>Авторизоваться</span>
+          <span>Личный кабинет</span>
         </a>
         <button class="top-header__search">
           <span class="visually-hidden">Поиск</span>
@@ -676,18 +676,140 @@
     </div>
     <h1>Ваш заказ</h1>
     <main>
-      <div class="my-order">
+      <div class="my-order-buttons">
+        <button onclick="PrintElem('#DivIdToPrint')">Распечатать бланк заказа</button>
+        <a href="beznal.html" target="_blank">Безналичный платеж</a>
+      </div>
+      <div class="my-order" id="DivIdToPrint">
         <fieldset>
           <legend>Личные данные</legend>
-          <div>
-            <span>ФИО</span>
-            <span>adskjf askdjf asldjf</span>
-          </div>
-          <div>
-            <span>ФИО</span>
-            <span>adskjf askdjf asldjf</span>
+          <div class="my-order__info-list">
+            <div>
+              <span>ФИО</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Телефон</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>E-mail</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
           </div>
         </fieldset>
+        <fieldset>
+          <legend>Сведения о заказе</legend>
+          <div class="my-order__info-list">
+            <div>
+              <span>Номер заказ</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Статус заказа</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Создан</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Сведения о доставке</legend>
+          <div class="my-order__info-list">
+            <div>
+              <span>Доставка</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Стоимость доставки</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Адрес доставки</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+            <div>
+              <span>Почтовый индекс</span>
+              <span>adskjf askdjf asldjf</span>
+            </div>
+          </div>
+        </fieldset>
+        <div class="my-order__table-wrapper">
+          <table>
+            <tr>
+              <th>Название</th>
+              <th>Цена, руб.</th>
+              <th>Со скидкой, руб.</th>
+              <th>Количество</th>
+              <th>Вес</th>
+              <th>Сумма, руб.</th>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <img src="src/img/product3.png" width="60" height="60" alt="">
+                  <span>48965621 <strong>Tokina AT-X 128 f/4 Pro DX EF</strong></span>
+                </p>
+                <p>Производитель: Производитель 1</p>
+                <p>Тип объектива: широкоугольный</p>
+                <p>Фокусное расстояние: 14 мм</p>
+                <p>Диафрагма: F2.80</p>
+                <p>Минимальная диафрагма: F22</p>
+                <p>Крепление: Canon EF</p>
+                <p>Автоматическая фокусировка: Есть</p>
+                <p>Число элементов / групп элементов: 14 / 10</p>
+                <p>Число асферических элементов: 1</p>
+                <p>Число лепестков диафрагмы: 5</p>
+                <p>Размеры (D x L): 77 x 89 мм</p>
+                <p>Вес: 560 г</p>
+              </td>
+              <td>5000</td>
+              <td>4000</td>
+              <td>3</td>
+              <td>455</td>
+              <td>3454353</td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <img src="src/img/product3.png" width="60" height="60" alt="">
+                  <span>48965621 <strong>Tokina AT-X 128 f/4 Pro DX EF</strong></span>
+                </p>
+                <p>Производитель: Производитель 1</p>
+                <p>Тип объектива: широкоугольный</p>
+                <p>Фокусное расстояние: 14 мм</p>
+                <p>Диафрагма: F2.80</p>
+                <p>Минимальная диафрагма: F22</p>
+                <p>Крепление: Canon EF</p>
+                <p>Автоматическая фокусировка: Есть</p>
+                <p>Число элементов / групп элементов: 14 / 10</p>
+                <p>Число асферических элементов: 1</p>
+                <p>Число лепестков диафрагмы: 5</p>
+                <p>Размеры (D x L): 77 x 89 мм</p>
+                <p>Вес: 560 г</p>
+              </td>
+              <td>5000</td>
+              <td>4000</td>
+              <td>3</td>
+              <td>455</td>
+              <td>3454353</td>
+            </tr>
+            <tr>
+              <td colspan="5"><b>Сумма:</b></td>
+              <td><b>123132</b></td>
+            </tr>
+            <tr>
+              <td colspan="5"><b>Сумма со скидками:</b></td>
+              <td><b>123132</b></td>
+            </tr>
+            <tr>
+              <td colspan="5"><b>Сумма к оплате:</b></td>
+              <td><b>123132</b></td>
+            </tr>
+          </table>
+        </div>
       </div>
     </main>
   </div>
@@ -813,7 +935,7 @@
       </span>
       <input type="password">
     </label>
-    <button type="submit">Войти</button>
+    <button class="gold-button" type="submit">Войти</button>
   </form>
   <div class="modal__link-block">
     <div class="modal__forgot-password">

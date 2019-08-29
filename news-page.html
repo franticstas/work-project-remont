@@ -839,27 +839,42 @@
               </li>
             </ul>
             <p>Комментариев пока нет</p>
-<!--            ************* Форма авторизации что бы оставить комментарий *******-->
+<!--     Форма что бы оставить комментарий если пользователь не авторизован -->
+<!--            <form>-->
+<!--              <div>Пожалуйста, авторизуйтесь, чтобы оставить комментарий.</div>-->
+<!--              <fieldset>-->
+<!--                <legend>Авторизация</legend>-->
+<!--                <label>-->
+<!--                  <span>Введите Ваш логин или e-mail:</span>-->
+<!--                  <input type="text">-->
+<!--                </label>-->
+<!--                <label>-->
+<!--                  <span>Пароль:</span>-->
+<!--                  <input type="password">-->
+<!--                </label>-->
+<!--                <label>-->
+<!--                  <input type="checkbox"> Запомнить-->
+<!--                </label>-->
+<!--                <button type="submit">Войти</button>-->
+<!--                <div>-->
+<!--                  <a href="#">Регистрация</a>-->
+<!--                  <a href="#">Забыли пароль?</a>-->
+<!--                </div>-->
+<!--              </fieldset>-->
+<!--            </form>-->
+<!--             Форма комментария если пользователь авторизован -->
             <form>
-              <div>Пожалуйста, авторизуйтесь, чтобы оставить комментарий.</div>
               <fieldset>
-                <legend>Авторизация</legend>
+                <legend>Добавить комментарий</legend>
                 <label>
-                  <span>Введите Ваш логин или e-mail:</span>
+                  <span>Имя:</span>
                   <input type="text">
                 </label>
-                <label>
-                  <span>Пароль:</span>
-                  <input type="password">
+                <label class="news__textarea-label">
+                  <span>Комментарий:</span>
+                  <textarea name="" cols="30" rows="10"></textarea>
                 </label>
-                <label>
-                  <input type="checkbox"> Запомнить
-                </label>
-                <button type="submit">Войти</button>
-                <div>
-                  <a href="#">Регистрация</a>
-                  <a href="#">Забыли пароль?</a>
-                </div>
+                <button type="submit">Отправить</button>
               </fieldset>
             </form>
           </div>
