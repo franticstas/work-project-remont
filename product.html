@@ -15,7 +15,7 @@
   <title>Магазин техники</title>
 </head>
 <body>
-<header class="header">
+ <header class="header">
   <!--    **************** Верхний хедер ***********-->
   <div class="top-header">
     <div class="wrapper">
@@ -28,28 +28,33 @@
         <button class="top-nav__close"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="top-nav__list">
           <li class="top-nav__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="top-nav__item">
-            <a href="#">О компании</a>
+            <a href="about-company.html">О компании</a>
           </li>
           <li class="top-nav__item">
-            <a href="#">Как купить?</a>
+            <a href="how-to-buy.html">Как купить?</a>
           </li>
           <li class="top-nav__item">
-            <a href="#">Оплата и доставка</a>
+            <a href="delivery.html">Оплата и доставка</a>
           </li>
           <li class="top-nav__item">
-            <a href="#">Отзывы</a>
+            <a href="reviews.html">Отзывы</a>
           </li>
           <li class="top-nav__item">
-            <a href="#">Контакты</a>
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
       <div class="top-header__user-block">
-        <a class="top-header__user-enter" data-fancybox data-src="#modal__lk" href="javascript:;">
-          <span>Авторизоваться</span>
+        <!--          Если пользователь не авторизован -->
+        <!--          <a class="top-header__user-enter" data-fancybox data-src="#modal__lk" href="javascript:;">-->
+        <!--            <span>Авторизоваться</span>-->
+        <!--          </a>-->
+        <!--           Если пользователь авторизован -->
+        <a class="top-header__user-enter" data-fancybox data-src="#modal__lk-authorize" href="javascript:;">
+          <span>Личный кабинет</span>
         </a>
         <button class="top-header__search">
           <span class="visually-hidden">Поиск</span>
@@ -657,6 +662,58 @@
           руб.
         </div>
       </a>
+    </div>
+  </div>
+  <!--    ********************* Раздел слайдеров в шапке *************************-->
+  <div class="header__slider">
+    <div class="swiper-container swiper-header">
+      <div class="swiper-wrapper">
+        <!--          *************** Слайдер ***************-->
+        <div class="swiper-slide header__slide-item"
+             style="background-image: url('src/img/slide11.jpg')">
+          <div class="header__slide-text-block">
+            <div class="header__slide-title">
+              Sony Alpha SLT-A99 Body
+            </div>
+            <div class="header__slide-description">
+              Известный фотограф Alexander De Luca в своих работах
+              использует именно эту камеру. Его работы вдохновляют
+              миллионы последователей по всему миру. Данная камера
+              доступна и в нашем магазине.
+            </div>
+          </div>
+        </div>
+        <!--          *************** Слайдер ***************-->
+        <div class="swiper-slide header__slide-item"
+             style="background-image: url('src/img/slide22.jpg')">
+          <div class="header__slide-text-block">
+            <div class="header__slide-title">
+              Canon EOS 5D Mark III Body
+            </div>
+            <div class="header__slide-description">
+              PENTAX K-50 - это современная зеркальная камера, обладающая
+              поистине выдающимися техническими характеристиками.
+            </div>
+          </div>
+        </div>
+        <!--          *************** Слайдер ***************-->
+        <div class="swiper-slide header__slide-item"
+             style="background-image: url('src/img/slide33.png')">
+          <div class="header__slide-text-block">
+            <div class="header__slide-title">
+              Sony Alpha SLT-A99 Body
+            </div>
+            <div class="header__slide-description">
+              Известный фотограф Alexander De Luca в своих работах
+              использует именно эту камеру. Его работы вдохновляют
+              миллионы последователей по всему миру. Данная камера
+              доступна и в нашем магазине.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination__header"></div>
     </div>
   </div>
 </header>
